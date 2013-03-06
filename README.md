@@ -6,10 +6,11 @@ title: README
 This is a friendly how-to for contributors to the Websites with Python Flask
 course at OpenTechSchool. First, a quick refresher on the course:
 
-So we are expecting users who have written a little code before but never shared
-it. They may have some JS, Python or Ruby skills, and may have written a bit of
-HTML and CSS. We won't be expecting them to have Python installed when they show
-up.
+> Ever wanted to learn how websites work or wanted to build one yourself? Or maybe you have played around with some HTML but wonder how to get it to actually do something? Now is the time to start with our Websites with Python Flask workshop. We'll take you through creating a basic interactive website using Flask, a very popular choice for websites created using the Python programming language.
+
+> You will only need a laptop and a very basic understanding of Python (such as from our Introduction to Programming workshop). If you have previous experience with HTML, CSS and JavaScript then that is great too (but not required).
+
+So we are expecting users who have written a little code before but never shared it. They may have some JS, Python or Ruby skills, and may have written a bit of HTML and CSS. We won't be expecting them to have Python installed when they show up.
 
 # Class format
 
