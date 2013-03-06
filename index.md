@@ -5,8 +5,7 @@ title: Websites with Python Flask
 
 ---
 
-This is the course content for Websites with Python Flask, which has
-been developed and maintained by OpenTechSchool.
+This is the course content for Websites with Python Flask, which has been developed and maintained by OpenTechSchool.
 
 # Welcome
 

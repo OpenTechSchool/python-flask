@@ -3,8 +3,7 @@ layout: ots
 title: README 
 ---
 
-This is a friendly how-to for contributors to the Websites with Python Flask
-course at OpenTechSchool. First, a quick refresher on the course:
+This is a friendly how-to for contributors to the Websites with Python Flask course at OpenTechSchool. First, a quick refresher on the course:
 
 > Ever wanted to learn how websites work or wanted to build one yourself? Or maybe you have played around with some HTML but wonder how to get it to actually do something? Now is the time to start with our Websites with Python Flask workshop. We'll take you through creating a basic interactive website using Flask, a very popular choice for websites created using the Python programming language.
 
@@ -16,18 +15,9 @@ So we are expecting users who have written a little code before but never shared
 
 At OpenTechSchool we tend to go *practical* and *at your own pace*.
 
-Practical meaning that we aren't big on theory, or requiring that people
-understand something completely before using it. We aren't expecting any of the
-students to become computer scientists. Generally programming for our students
-is a way of solving some practical problem. If they want to accomplish it with
-LISP or a spreadsheet is entirely up to them.
+Practical meaning that we aren't big on theory, or requiring that people understand something completely before using it. We aren't expecting any of the students to become computer scientists. Generally programming for our students is a way of solving some practical problem. If they want to accomplish it with LISP or a spreadsheet is entirely up to them.
 
-At your own pace means that we provide access to the complete course notes at
-the beginning of the session. Then students can progress individually. Some
-students will get through very quickly, others will take some time, and most
-will finish the core work with time to spare. The core work should be
-completable by everyone. To keep things interesting we supply various
-additional topics which are entirely optional.
+At your own pace means that we provide access to the complete course notes at the beginning of the session. Then students can progress individually. Some students will get through very quickly, others will take some time, and most will finish the core work with time to spare. The core work should be completable by everyone. To keep things interesting we supply various additional topics which are entirely optional.
 
 A class schedule looks like this:
 
@@ -36,26 +26,18 @@ A class schedule looks like this:
     1235 - Students learn stuff.
     1545 - Thankyous, maybe demonstrations.
 
-As you can see, the schedule just has a big chunk of 'learn stuff'. We like to
-keep things open.
+As you can see, the schedule just has a big chunk of 'learn stuff'. We like to keep things open.
 
 # Author Guide
 
-So, fork this repository. The guide is written as a [Jekyll](http://jekyllrb.com/)
-site, hosted on GitHub pages. It's set up so you can just write pages in Markdown.
-A markup guide is below.
+So, fork this repository. The guide is written as a [Jekyll](http://jekyllrb.com/) site, hosted on GitHub pages. It's set up so you can just write pages in Markdown.  A markup guide is below.
 
-Course work goes under `core/` or `extras/`. It's all linked together by
-`index.md` in the root direcory.
+Course work goes under `core/` or `extras/`. It's all linked together by `index.md` in the root direcory.
 
-* `core/` covers the basic goals of the course. In this course that means
-  setting up Git, creating a GitHub account, creating a repo, etc etc. Put any
-  images in `core/images/`
-* `extras/` are all the interesting things people can do once they have
-  completed the basics. Things like hosting with Heroku, or sending emails.
+* `core/` covers the basic goals of the course. In this course that means setting up Git, creating a GitHub account, creating a repo, etc etc. Put any images in `core/images/`
+* `extras/` are all the interesting things people can do once they have completed the basics. Things like hosting with Heroku, or sending emails.
 
-It's easiest to start at the end. Think of a fun and interesting topic to add to
-the extras. Then you can copy this file to get an idea for formatting.
+It's easiest to start at the end. Think of a fun and interesting topic to add to the extras. Then you can copy this file to get an idea for formatting.
 
 # Markup Guide
 
@@ -86,13 +68,11 @@ the extras. Then you can copy this file to get an idea for formatting.
 
 Getting literal with `backticks`
 
-    Or use an indent of 4 spaces,
-    to get yourself a code block,
-    that looks lovely.
+    Or use an indent of 4 spaces, 
+	to get yourself a code block, 
+	that looks lovely.
 
-> Do a bit of blockquoting. You can still reflow the text as much as you like.
-Newlines are awesome.
-And made of win.
+> Do a bit of blockquoting. You can still reflow the text as much as you like.  Newlines are awesome.  And made of win.
 
 [links for nerds](http://slashdot.org)
 
