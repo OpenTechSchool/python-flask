@@ -39,6 +39,12 @@ Course work goes under `core/` or `extras/`. It's all linked together by `index.
 
 It's easiest to start at the end. Think of a fun and interesting topic to add to the extras. Then you can copy this file to get an idea for formatting.
 
+## Editing Text
+
+We use long-lines (no newlines in paragraphs) to keep diffs moderately sane.
+
+I use Emacs 24, with markdown-mode (Ubuntu emacs-goodies-el) and gfm-mode (GitHub markdown minor-mode). Set `longlines-show-hard-newlines` if you want to see where all the newlines are.
+
 # Markup Guide
 
 # First level section
