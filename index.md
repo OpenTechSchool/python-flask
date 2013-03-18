@@ -43,8 +43,8 @@ Many developers did not require such large and complicated tools and so now we a
 * [Hello, World!](core/hello-world.html) - Serving our first web page.
 * [HTML, CSS and JavaScript](core/html-css-js.html) - Fleshing out our awesome landing page.
 * [Forms](core/forms.html) - How forms work on the web.
-* [Data Structures](core/data.html) - The basics of storing data in Python.
 * [Form Submission](core/form-submission.html) - Receiving and processing the form.
+* [Data Structures](core/data.html) - The basics of storing data in Python.
 
 # Extra fun stuff
 
