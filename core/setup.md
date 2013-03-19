@@ -115,12 +115,12 @@ Though the official Flask doesn't run on Python 3, someone has kindly done the w
 
 With `pip`, you can install Flask with this:
 
-	pip install https://github.com/puzzlet/itsdangerous/tarball/py3 https://github.com/puzzlet/werkzeug/tarball/py3-dev https://github.com/puzzlet/flask/tarball/py3
+	pip install https://github.com/puzzlet/itsdangerous/tarball/py3 https://github.com/puzzlet/werkzeug/tarball/py3 https://github.com/puzzlet/flask/tarball/py3
 
 If you don't feel like installing them all at once you can do it one-by-one:
 
 	pip install https://github.com/puzzlet/itsdangerous/tarball/py3
-	pip install https://github.com/puzzlet/werkzeug/tarball/py3-dev
+	pip install https://github.com/puzzlet/werkzeug/tarball/py3
 	pip install https://github.com/puzzlet/flask/tarball/py3
 
 Then you are good to go with Flask on Python 3.
