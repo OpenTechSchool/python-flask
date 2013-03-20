@@ -37,7 +37,7 @@ When the web became ubiquitous in the early 2000s many programmers were fed up w
 
 Many developers did not require such large and complicated tools and so now we also have the _microframeworks_. Of these, Sinatra (Ruby), Node (JavaScript), Flask (Python) and Bottle (Python) are very popular. These are small focused libraries that provide just the bare essentials, but can usually be extended into more complicated solutions.
 
-# The course
+# Core workshop material
 
 * [Setting up](core/setup.html) - Installation instructions for Windows, OSX and Linux.
 * [Hello, World!](core/hello-world.html) - Serving our first web page.
@@ -47,6 +47,8 @@ Many developers did not require such large and complicated tools and so now we a
 * [Data Structures](core/data.html) - The basics of storing data in Python.
 
 # Extra fun stuff
+
+Of course the core workshop can't cover everything. But we've prepared these extra topics to guide you with things you might be interested in. You can pick-and-choose whichever ones you want, they are all independent of each other.
 
 * [Fancy HTML and CSS](extras/fancy.html)
 * [Grid layouts](extras/grids.html)
@@ -59,5 +61,6 @@ Many developers did not require such large and complicated tools and so now we a
 
 * [Python Lists API](http://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range) and  [Python Dictionaries API](http://docs.python.org/3/library/stdtypes.html#mapping-types-dict)
 * [Flask Documentation](http://flask.pocoo.org/docs/) - Quickstart, User Guide and Reference.
+* [Jinja Documentation](http://jinja.pocoo.org/docs/templates/) - For the HTML templates used in Flask.
 * [Popular Web Frameworks](reference/web-frameworks.html) - Some of the more popular website platforms at the moment.
 * [Popular Databases](references/databases.html) - Common databases in use and their strengths and weaknesses.
