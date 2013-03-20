@@ -1,6 +1,6 @@
 from flask import Flask
 from flask import render_template
-from flask import request, redirect, url_for
+from flask import request, redirect
 
 app = Flask(__name__)
 
@@ -12,7 +12,7 @@ def hello_world():
 def signup():
     email = request.form['email']
     print("The email address is '" + email + "'")
-    return redirect(url_for('hello_world'))
+    return redirect('/')
 
 if __name__ == '__main__':
 	app.run(debug=True)

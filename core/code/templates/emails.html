@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Cats Everywhere email addresses</title>
+  </head>
+  <body>
+    <p>Here are all the emails we have collected:</p>
+    <ul>
+      {% for email in email_addresses %}
+      <li>{{ email }}</li>
+      {% endfor %}
+    </ul>
+    <p>THIS IS GONNA ROCK!</p>
+  </body>
+</html>

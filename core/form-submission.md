@@ -9,7 +9,7 @@ To do this we will need two things:
 * A HTML form on the web page. This will have a text input field and a submit button.
 * A _route_ in our Flask app to accept the data posted by the form.
 
-At the moment we will just print out the email addresses that we receive.
+At the moment we will just print out the email addresses that we receive directly to the console.
 
 # HTML Form
 
@@ -26,10 +26,32 @@ Place this form inside the `<body>` section of the landing page. You can fiddle 
 
 Now the action attribute of the form is saying it will be posted to `signup.html`. We don't have any code for this URL at the moment, so it is time to make one!
 
-We are going to need to import more objects from Flask. We need `request` to get the form data, `redirect` to redirect the browser once we are done and `url_for` to generate the URL back to the main page.
+We are going to need to import more objects from Flask. We need `request` to get the form data, `redirect` to redirect the browser once we are done.
 
-	from flask import request, redirect, url_for
+	from flask import request, redirect
 
+Now we can add our new route for `signup.html`.
 
+	@app.route('/signup.html', methods = ['POST'])
+	def signup():
+	    email = request.form['email']
+	    print("The email address is '" + email + "'")
+	    return redirect('/'))
 
+This gets a little complicated, so we'll go through it line-by-line:
 
+	@app.route('/signup.html', methods = ['POST'])
+	
+We apply a _decorator_ to the signup function, saying that we want it to be used for `/signup.html`. It will accept the HTTP _POST_ method, which you can see is mentioned in the HTML form element as `method="post"`.
+
+	def signup():
+	    email = request.form['email']
+	    print("The email address is '" + email + "'")
+
+In the signup method we can retrieve the email address using the `request` object, which contains the form data. In the HTML we used `name="email"`, which means that in the `request` object we can use `request.form["email"]`. If we used `name="address"` in the HTML then it would be `request.form["address"]`.
+
+We just print out the email address at this stage. So when you submit it you should be able to see the email address printed to the console.
+
+	    return redirect('/')
+
+Once we have printed the email address we still need a response to send back to the web browser. A common option is to send a HTTP _Redirect_ response. This tells the browser to go to another page. In our case we just send them back to the home page, `/`, which is served by the `hello_world()` function.
