@@ -50,7 +50,9 @@ We apply a _decorator_ to the signup function, saying that we want it to be used
 
 In the signup method we can retrieve the email address using the `request` object, which contains the form data. In the HTML we used `name="email"`, which means that in the `request` object we can use `request.form["email"]`. If we used `name="address"` in the HTML then it would be `request.form["address"]`.
 
-We just print out the email address at this stage. So when you submit it you should be able to see the email address printed to the console.
+When we write `request.form["email"]` we are using `request.form` as a Python Dictionary, looking up the entry held in there for `"email"`. Dictionaries are a type of data structure we haven't seen before, we'll talk about them more in the Data Structures chapter.
+
+At this stage We just print out the email address that's supplied. So when you submit the form you should be able to see the address you supplied printed out on the console.
 
 	    return redirect('/')
 
