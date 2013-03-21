@@ -10,25 +10,11 @@
 
   <link rel="icon" href="/favicon.ico" type="image/png">
      <style type="text/css">
-      body {
-        padding-top: 20px;
-        padding-bottom: 40px;
-      }
-
-      /* Custom container */
-      .container-narrow {
-        margin: 0 auto;
-        max-width: 700px;
-      }
-      .container-narrow > hr {
-        margin: 30px 0;
-      }
-
       h1, h2, h3, h4, h5, h6 {
         font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif;
       }
       
-      .title { text-align: center; }
+      .title { text-align: center; margin-bottom: 30px; }
 
       pre {
         border-color: #fff;
@@ -38,16 +24,49 @@
       code {
         font-size: 16px;
       }
+
      </style>
 </head>
 
 <body>
-    <div class="container-narrow">
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+	  <div class="brand">
+	      <a href="http://www.opentechschool.org/">OpenTechSchool</a>
+	      - <a href="{{site.baseurl}}">{{site.title}}</a>
+	  </div>
+        </div>
+      </div>
+    </div>
 
-      <h1 class="title">{{ page.title }}</h1>
+    <div class="container-fluid">
+
+      <div class="row-fluid">
+	<h1 class="title">{{ page.title }}</h1>
+      </div>
+      
+      <div class="row-fluid">
+
+	<div class="span3 well sidebar-nav">
+      <ul class="nav nav-list">
+      {% for p in site.map %} 
+        <li class="nav-header"><a href="{{site.baseurl}}{{p.path}}" alt="{{ p.caption }}">{{p.title}}</a></li>
+        {% for s in p.subpages %}
+          <li><a href="{{site.baseurl}}{{s.path}}" alt="{{ s.caption }}">{{s.title}}</a></li>
+        {% endfor %}
+      {% endfor %}
+      </ul>
+      </div>
+
+	<div class="span9">
       {{ content }}
+	</div>
+      </div>
 
+	<div class="row-fluid">
       <div>© 2011-2012 by <a href="http://www.opentechschool.org">OpenTechSchool</a>&nbsp;&nbsp;||&nbsp;&nbsp;<a href="http://www.opentechschool.org/imprint.html">Impressum</a></div>
+      </div>
 
     </div>
     <script src="http://code.jquery.com/jquery-latest.js"></script>

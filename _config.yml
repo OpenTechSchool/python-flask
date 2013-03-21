@@ -1,2 +1,48 @@
 permalinks: title
 baseurl: /python-flask
+title: Websites with Python Flask
+map:
+ - title: Home
+   path: /
+   caption: Websites with Python Flask
+ - title: Core
+   path: /core.html
+   caption: The 'mandatory' workshop content
+   subpages:
+    - title: Setting up
+      path: /core/setup.html
+      caption: Installation instructions for Windows, OSX and Linux.
+    - title: Hello, World!
+      path: /core/hello-world.html
+      caption: Serving our first web page.
+    - title: Forms
+      path: /core/forms.html
+      caption: How forms work on the web.
+    - title: Form Submission
+      path: /core/form-submission.html
+      caption: Receiving and processing the form.
+    - title: Data Structure
+      path: /core/data.html
+      caption: The basics of storing data in Python.
+ - title: Extras
+   path: /extras.html
+   caption: Additional workshop content
+   subpages:
+    - title: Fancy HTML and CSS
+      path: /extras/fancy.html
+      caption: 
+    - title: Grid layouts
+      path: /extras/grids.html
+      caption: 
+    - title: Sending emails
+      path: /extras/email.html
+      caption: 
+    - title: AJAX and Web 2.0
+      path: /extras/ajax.html
+      caption: 
+    - title: Using a database
+      path: /extras/databases.html
+      caption: 
+    - title: Free hosting with Heroku!
+      path: /extras/heroku.html
+      caption: 
