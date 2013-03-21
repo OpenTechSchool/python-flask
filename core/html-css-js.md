@@ -25,6 +25,7 @@ And when the browser _renders_ the HTML it looks like this:
 <div class="cite">John Green</div>
 </div>
 
+If you want to get a feel for what all the different HTML tag names like (called ``elements``) can be, and what they do, check out Mozilla's [HTML Element Reference](https://developer.mozilla.org/en-US/docs/HTML/Element). Don't worry too much about the details for now, though.
 
 ## CSS
 
@@ -53,7 +54,9 @@ When applied, this "styles" the quote to look like this:
 <div class="cite" style="text-align: right; font-weight: bold; font-size: x-large;">John Green</div>
 </div>
 
-Note that even though the default style is terrible, that doesn't stop me from creating an alternate, equally ugly, style.
+Note that even though the default style is terrible, that didn't stop me from creating an alternate, equally ugly, style.
+
+If you want a deeper understanding of what all of the CSS properties like ``padding`` or ``background-color`` can possibly do, check out Mozilla's [CSS Reference](https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference). Don't worry too much about the details for now, though.
 
 ## JavaScript
 
