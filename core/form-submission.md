@@ -24,7 +24,7 @@ Place this form inside the `<body>` section of the landing page. You can fiddle 
 
 # Python route
 
-Now the action attribute of the form is saying it will be posted to `signup.html`. We don't have any code for this URL at the moment, so it is time to make one!
+Now the action attribute of the form is saying it will be posted to `signup.html`. We don't have any code for this URL at the moment, so it is time to make some!
 
 We are going to need to import more objects from Flask. We need `request` to get the form data, `redirect` to redirect the browser once we are done.
 
@@ -41,8 +41,8 @@ Now we can add our new route for `signup.html`.
 This gets a little complicated, so we'll go through it line-by-line:
 
 	@app.route('/signup.html', methods = ['POST'])
-	
-We apply a _decorator_ to the signup function, saying that we want it to be used for `/signup.html`. It will accept the HTTP _POST_ method, which you can see is mentioned in the HTML form element as `method="post"`.
+
+We apply a _decorator_ to the signup function, saying that we want it to be used when the browser requests `/signup.html`. It will accept the HTTP _POST_ method, which you can see is mentioned in the HTML form element as `method="post"`.
 
 	def signup():
 	    email = request.form['email']

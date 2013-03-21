@@ -43,8 +43,10 @@ For the quote above we can do a stylesheet like this:
 		 font-weight: bold;
 		 font-size: x-large;
 	 }
-	 
-Which changes the quote to look like this:
+
+Each section in the stylesheet applies to a different set of tags. The first section applies to any ``blockquote`` tags. The second section applies to any tags which have the attribute ``class="cite"`` as part of their name (like the second tag in the example.)
+
+When applied, this "styles" the quote to look like this:
 
 <div style="padding: 30px;">
 <blockquote style="background-color: black; color: yellow; padding: 10px;">"Nerds like us are allowed to be unironically enthusiastic about stuff. Nerds are allowed to love stuff - like, jump-up-and-down-in-your-chair-can't-control-yourself love it. When people call other people nerds, mostly what they're saying is "You like stuff", which is not a good insult at all. Like, "You are too enthusiastic about the miracle of human consciousness"."</blockquote>
@@ -55,10 +57,10 @@ Note that even though the default style is terrible, that doesn't stop me from c
 
 ## JavaScript
 
-JavaScript is an entire programming language contained entirely within the browser. Though HTML with CSS might look pretty, it can't actually do anything once the page has been rendered. 
+JavaScript is an entire programming language contained entirely within the browser. Though HTML with CSS might look pretty, it can't actually do anything once the page has been rendered.
 
 
-This snippet of JavaScript will scan the page for `blockquote` tags and give them a random color every 200 milliseconds (five times per second).
+This snippet of JavaScript will run in your browser and scan the current page for `blockquote` tags and give them a random color every 200 milliseconds (five times per second).
 
     function partypartyparty(event) {
 	  var blockquotes = document.getElementsByTagName('blockquote');
@@ -69,11 +71,11 @@ This snippet of JavaScript will scan the page for `blockquote` tags and give the
         var e = blockquotes[i];
 		e.style.setProperty('color', 'rgb('+r+','+g+','+b+')');
 	  }
-	
+
 	  window.setTimeout(party.partypartyparty, 200);
     };
 
-The result is, well, startling:
+If you add it to the page then the result is, well, startling:
 
 <div style="padding: 30px;">
 <blockquote class="fancyquote" style="background-color: black; color: yellow; padding: 10px;">"Nerds like us are allowed to be unironically enthusiastic about stuff. Nerds are allowed to love stuff - like, jump-up-and-down-in-your-chair-can't-control-yourself love it. When people call other people nerds, mostly what they're saying is "You like stuff", which is not a good insult at all. Like, "You are too enthusiastic about the miracle of human consciousness"."</blockquote>
