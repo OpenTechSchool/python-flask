@@ -3,6 +3,8 @@ layout: ots
 title: README 
 ---
 
+Site can be viewed [here](http://opentechschool.github.com/python-flask)
+
 This is a friendly how-to for contributors to the Websites with Python Flask course at OpenTechSchool. First, a quick refresher on the course:
 
 > Ever wanted to learn how websites work or wanted to build one yourself? Or maybe you have played around with some HTML but wonder how to get it to actually do something? Now is the time to start with our Websites with Python Flask workshop. We'll take you through creating a basic interactive website using Flask, a very popular choice for websites created using the Python programming language.
