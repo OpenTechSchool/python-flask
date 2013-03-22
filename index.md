@@ -35,11 +35,12 @@ Since 1996 the most common web server has been Apache HTTPD, but from the late 1
 
 When the web became ubiquitous in the early 2000s many programmers were fed up with the work required to build and maintain large websites. From previous experience new platforms were built. Of these the most popular by far are Ruby on Rails and Python Django. These very large frameworks controlled the vast majority of the developer experience. Once set up they can make complicated websites very quickly, but also require a lot of experience to master.
 
-Many developers did not require such large and complicated tools and so now we also have the _microframeworks_. Several of these are very popular:
+Many developers did not require such large and complicated tools and so now we also have the _microframeworks_. As well as Flask, which we'll be using today, there are other popular microframeworks. These include:
+
 * Sinatra (which uses the programming language Ruby).
-* Node (which uses the programming language JavaScript).
+* Express (which uses the programming language JavaScript).
 * Bottle (which uses Python).
-* Flash (which also uses Python, and is the microframework we'll be using today).
+
 These are all small focused libraries that provide just the bare essentials, but can usually be extended into more complicated solutions.
 
 # Core workshop material
