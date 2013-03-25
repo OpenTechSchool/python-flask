@@ -16,7 +16,7 @@ There are two main types of request, `GET` and `POST`.
 * The browser sends a `GET` request to retrieve data. For example, going to `http://www.opentechschool.org/team.html` will cause the browser to send `GET /team.html` to the server.
 * The `POST` request is used to send data. For example if you fill out a web form and click `Submit` it will send the form data back to the server.
 
-We will be doing both GET and POST requests today. You've already handled a GET request with the Hello World example. Later on we will try POST.
+We will be doing both GET and POST requests today. First we'll handle a GET request with the Hello World example. Then in a later chapter we will try POST.
 
 # Hello World - A Static Website
 
@@ -46,7 +46,7 @@ This imports the Flask library and creates a new website in a variable called `a
 	def hello_world():
 		return 'Hello World!'
 
-The `@` is new, it's called a _decorator_ and it used to give meaning to function definitions. In this case it says that the website should _route_ requests from the browser for `/` to this function.
+The `@` is new, it's called a _decorator_ and it is used to give meaning to function definitions. In this case it says that if the browser requests the address `/`, then the website should _route_ that request to the `hello_world` function.
 
 The function itself returns the string "Hello World!". This will be sent to the web browser.
 
@@ -60,7 +60,7 @@ Now you can start running your first website!
 	$ python hello.py 
 	 * Running on http://127.0.0.1:5000/
 
-Open it in your browser! It probably looks something like this:
+Open that address in your browser! It probably looks something like this:
 
 ![](images/hello-world.png)
 
