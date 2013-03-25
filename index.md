@@ -48,6 +48,7 @@ These are all small focused libraries that provide just the bare essentials, but
 * [Setting up](core/setup.html) - Installation instructions for Windows, OSX and Linux.
 * [Hello, World!](core/hello-world.html) - Serving our first web page.
 * [HTML, CSS and JavaScript](core/html-css-js.html) - Fleshing out our awesome landing page.
+* [Files & Templates](core/files-templates.html) - How to show pictures of cats.
 * [Forms](core/forms.html) - How forms work on the web.
 * [Form Submission](core/form-submission.html) - Receiving and processing the form.
 * [Data Structures](core/data.html) - The basics of storing data in Python.
