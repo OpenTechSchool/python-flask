@@ -15,6 +15,12 @@ map:
     - title: Hello, World!
       path: /core/hello-world.html
       caption: Serving our first web page.
+    - title: Languages of the Web
+      path: /core/html-css-js.html
+      caption: What the web is built on
+    - title: Files & Templates
+      path: /core/files-templates.html
+      caption: How to serve different all the files
     - title: Forms
       path: /core/forms.html
       caption: How forms work on the web.
