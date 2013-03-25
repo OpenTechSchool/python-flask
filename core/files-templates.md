@@ -13,7 +13,7 @@ Luckily, Flask comes prepared. All you have to do is create a folder in the same
 
 You can do this with your computer's file browser, or on the command line by typing `mkdir static`.
 
-So, if you made a file in the `static` folder called `cats.gif`, and you'd normally access your application by visiting the url [`http://127.0.0.1:5000`](http://127.0.0.1:5000), then you can view that file by going to [`http://127.0.0.1:5000/static/cats.gif`](http://127.0.0.1:5000/static/cats.gif).
+So, if you made a file in the `static` folder called `cats.gif`, and you'd normally access your application by visiting the url [http://127.0.0.1:5000](http://127.0.0.1:5000), then you can view that file by going to [http://127.0.0.1:5000/static/cats.gif](http://127.0.0.1:5000/static/cats.gif).
 
 Check this works by downloading a funny image from the internet (there are plenty at [imgur](http://imgur.com)), putting it in the `static` folder, running your flask application (`python hello.py`), and browsing to your image by the right url.
 
@@ -26,18 +26,19 @@ None of that explains where to put the *content* of our application - the HTML. 
 Flask uses another special directory to store templates, called `templates` (crazy, huh?), so go ahead and create it, like you did for `static`.
 
 In it, create a file called `index.html` and chuck some in some HTML -
+{% raw %}
 
     <!DOCTYPE html>
     <html>
     <head>
-        <title>{{ author }}' app</title>
+        <title>{{ author }}'s app</title>
     </head>
     <body>
         <p>Hello {{ name }}!</p>
     </body>
     </html>
 
-
+{% endraw %}
 This is a pretty simple HTML page, but it includes two simple bits of Flask's templating language. When Flask shows this template to your browser, it will replace `{{ author }}` and `{{ name }}` with what you assign those two variables in your application.
 
 In this way a template separates what the content of the page should be, from the actual actual `data` that will be used as that content. This makes things a lot easier if you have to write a lot of dynamic web pages!
