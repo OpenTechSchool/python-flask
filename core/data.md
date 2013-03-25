@@ -46,10 +46,19 @@ To remove an item from the list we use ``remove()``:
       
 Lists can easily be processed in a ``for`` loop. Have a look at this example which prints each item of the list in a new row:
 
-    for item in shopping_list:
+	for item in shopping_list:
 		print(item)
 
-And that's it! Lists are the most common data structure in programming. There are lots of other things you can do with lists, and all languages have their own subtly different interpretation. But fundamentally they are all very similar.
+And that's it! Python also makes it really easy to check if something is in a list or not:
+
+	if "milk" in shopping_list:
+		print("Delicious!")
+	
+	if "eggs" not in shopping_list:
+		print("Well we can't have that!")
+		shopping_list.append("eggs")
+
+Lists are the most common data structure in programming. There are lots of other things you can do with lists, and all languages have their own subtly different interpretation. But fundamentally they are all very similar.
 
 In summary:
 
@@ -70,7 +79,7 @@ And you can add items to the dictionary like this:
 	  foods["banana"] = "A delicious and tasty treat!"
 	  foods["dirt"]   = "Not delicious. Not tasty. DO NOT EAT!"
 
-The keys in this example are "banana" and "dirt", and the values are the things that we assign to them.
+The keys in this example are "banana" and "dirt", and the values are the things that we assign to them. You can use any data type that won't change as a dictionary key. Check it out by using a number, a boolean value, and a list as keys in a dictionary. What does this say about strings?
 
 As with lists, you can always see what is inside a dictionary:
 
