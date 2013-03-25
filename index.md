@@ -9,9 +9,9 @@ This is the course content for Websites with Python Flask, which has been develo
 
 # Welcome
 
-Hi, welcome to Websites with Python Flask. In this workshop we will take you through the fundamentals of creating a dynamic websites using the Python Flask library. After the workshop you should have a rough mental of how websites work and some good pointers for getting further with websites of your own.
+Hi, welcome to Websites with Python Flask. In this workshop we will take you through the fundamentals of creating a dynamic websites using the Python Flask library. After the workshop you should have a rough mental picture of how websites work and some good pointers for getting further with websites of your own.
 
-We only expect you to know a little Python, like from our Introduction to Programming workshop. You definitely do not need to know a lot. It will be best if you have a recent version of Python installed as well (version 3 or higher).
+We only expect you to know a little Python, like from our [Introduction to Programming](http://opentechschool.github.com/python-beginners/en/index.html) workshop. You definitely do not need to know a lot. It will be best if you have a recent version of Python installed as well (version 3 or higher).
 
 Don't worry if you know only a little HTML or none at all. We'll be looking at how it all works rather than how to make it look pretty.
 
@@ -35,7 +35,13 @@ Since 1996 the most common web server has been Apache HTTPD, but from the late 1
 
 When the web became ubiquitous in the early 2000s many programmers were fed up with the work required to build and maintain large websites. From previous experience new platforms were built. Of these the most popular by far are Ruby on Rails and Python Django. These very large frameworks controlled the vast majority of the developer experience. Once set up they can make complicated websites very quickly, but also require a lot of experience to master.
 
-Many developers did not require such large and complicated tools and so now we also have the _microframeworks_. Of these, Sinatra (Ruby), Node (JavaScript), Flask (Python) and Bottle (Python) are very popular. These are small focused libraries that provide just the bare essentials, but can usually be extended into more complicated solutions.
+Many developers did not require such large and complicated tools and so now we also have the _microframeworks_. As well as Flask, which we'll be using today, there are other popular microframeworks. These include:
+
+* Sinatra (which uses the programming language Ruby).
+* Express (which uses the programming language JavaScript).
+* Bottle (which uses Python).
+
+These are all small focused libraries that provide just the bare essentials, but can usually be extended into more complicated solutions.
 
 # Core workshop material
 

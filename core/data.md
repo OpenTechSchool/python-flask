@@ -38,7 +38,7 @@ Now we can add items to ``shopping_list``. Try typing the following commands int
 	  shopping_list.append("cheese")
 	  shopping_list.append("bread")
 
-What is in the shopping list? What happens when you append numbers or        booleans to the list?
+What is in the shopping list? What happens when you append numbers or booleans to the list?
 
 To remove an item from the list we use ``remove()``:
 
@@ -59,7 +59,7 @@ In summary:
 
 ## Dictionaries
 
-The other main data type is the dictionary. The dictionary allows you to associate one piece of data with another. The analogy comes from real-life dictionaries, where we associate a word with it's meaning. It's a little harder to understand than a list, but Python makes them very easy to deal with.
+The other main data type is the dictionary. The dictionary allows you to associate one piece of data (a "key") with another (a "value"). The analogy comes from real-life dictionaries, where we associate a word (the "key") with its meaning. It's a little harder to understand than a list, but Python makes them very easy to deal with.
 
 You can create a dictionary with ``{}``
 
@@ -70,12 +70,32 @@ And you can add items to the dictionary like this:
 	  foods["banana"] = "A delicious and tasty treat!"
 	  foods["dirt"]   = "Not delicious. Not tasty. DO NOT EAT!"
 
+The keys in this example are "banana" and "dirt", and the values are the things that we assign to them.
+
 As with lists, you can always see what is inside a dictionary:
 
 	  >>> foods
 	  {'banana': 'A delicious and tasty treat!', 'dirt': 'Not delicious. Not tasty. DO NOT EAT!'}
 
-And you can also delete from a dictionary as well. We don't really need to include an entry for dirt:
+You can look up any entry in the dictionary by its key:
+
+       >>> foods["banana"]
+       'A delicious and tasty treat!'
+
+If the key isn't found in the dictionary, a `KeyError` occurs:
+
+        >>> foods["cheese"]
+        Traceback (most recent call last):
+          File "<stdin>", line 1, in <module>
+        KeyError: 'cheese'
+
+For this reason, you can test whether a key is in the dictionary or not, by using the keyword `in`:
+
+        if "cheese" in foods:
+            print("Cheese is one of the known foods!")
+            print(foods["cheese"])
+
+You can delete from a dictionary as well. We don't really need to include an entry for dirt:
 
 	  del foods["dirt"]
 

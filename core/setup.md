@@ -31,7 +31,9 @@ If you don't have 2.7 installed then you can download and install it here:
 
 # pip
 
-The `pip` command uses the [Python Packages Index](https://pypi.python.org/pypi) to install new Python libraries. This makes it super-easy to install Flask and other libraries that you might want to use in future, like for example [Twitter](https://pypi.python.org/pypi/twitter/1.9.1) or  [bashplotlib](https://pypi.python.org/pypi/bashplotlib/0.4.4).
+Python comes with a lot of built-in functionality in the form of modules. For example, we used the `turtle` module in the Introduction to Programming course. However, Python doesn't come with everything you might need. You can extend Python by adding new modules, which coem bundled up in `libraries`.
+
+The `pip` command uses the [Python Packages Index](https://pypi.python.org/pypi) to install new Python libraries. This makes it super-easy to install Flask and other libraries that you might want to use in future, for example [Twitter](https://pypi.python.org/pypi/twitter/1.9.1) (to access the Twitter API to request data about Twitter) or [bashplotlib](https://pypi.python.org/pypi/bashplotlib/0.4.4) (to plot data on a graph in your terminal.)
 
 ## Windows
 
