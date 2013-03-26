@@ -9,7 +9,7 @@ Websites can be roughly divided into two parts, the browser and the server.
 
 We are all familiar with web browsers, you are using one right now. There are a number of popular ones, such as Chrome, Firefox and Internet Explorer.
 
-All web browsers handle the four fundamental technologies of the web:
+All web browsers handle the four fundamental technologies of the web. We've already seen the first, HTTP, which handles delivering content to the browser. Here are the remaining three:
 
 ## HTML
 
