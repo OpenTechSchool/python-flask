@@ -6,7 +6,7 @@ map:
    path: /
    caption: Websites with Python Flask
  - title: Core
-   path: /core.html
+   path: /core/setup.html
    caption: The 'mandatory' workshop content
    subpages:
     - title: Setting up
@@ -31,7 +31,7 @@ map:
       path: /core/data.html
       caption: The basics of storing data in Python.
  - title: Extras
-   path: /extras.html
+   path: /extras/fancy.html
    caption: Additional workshop content
    subpages:
     - title: Fancy HTML and CSS
