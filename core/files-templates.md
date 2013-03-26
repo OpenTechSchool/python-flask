@@ -69,3 +69,11 @@ Then in `hello()`, we added two variables called `author` and `name`. **Please c
 Then instead of returning some text, we returned the result of calling `render_template`. First, we give it the file name of the template we wish to return. Then, we pass in the variable names that the template should know about (`author` and `name`) and what their values should be (...coincidentally, `author` and `name`!).
 
 Now try running and viewing your app, in all its HTML glory!
+
+## A prettier home page
+
+Now that we have a bit more confidence in changing the home page let's look at making something a bit prettier. We want the home page of _Cats Everywhere_ to be fun and exciting. Something that says "Yes, these people know what they are doing. I will give them my email address in hope of seeing more of their work in future."
+
+This means fancy fonts, large bold type, huge banner images and nice round corners and things. We are going to need some more interesting HTML and a fair bit of CSS to get it looking pretty.
+
+We've prepared a self-contained template that you can use for the home page. Download it [here](code/templates/files-templates.html) and save it as `index.html` in your templates directory.
