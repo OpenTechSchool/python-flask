@@ -36,7 +36,7 @@ In it, **create a file** called `index.html` and chuck some in some HTML -
     </head>
     
     <body>
-        <p>Hello {{ name }}!</p>
+        <h2>Hello {{ name }}!</h2>
     </body>
     </html>
 
