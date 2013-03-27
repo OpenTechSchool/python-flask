@@ -2,4 +2,5 @@
 _site/
 *~
 .venv*
+emails.db
 

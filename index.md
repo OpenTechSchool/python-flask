@@ -61,7 +61,7 @@ Of course the core workshop can't cover everything. But we've prepared these ext
 * [Grid layouts](extras/grids.html)
 * [Sending emails](extras/email.html)
 * [AJAX and Web 2.0](extras/ajax.html)
-* [Using a database](extras/databases.html)
+* [Using Databases](extras/databases.html)
 * [Free hosting with Heroku!](extras/heroku.html)
 
 # Reference material
@@ -70,4 +70,4 @@ Of course the core workshop can't cover everything. But we've prepared these ext
 * [Flask Documentation](http://flask.pocoo.org/docs/) - Quickstart, User Guide and Reference.
 * [Jinja Documentation](http://jinja.pocoo.org/docs/templates/) - For the HTML templates used in Flask.
 * [Popular Web Frameworks](reference/web-frameworks.html) - Some of the more popular website platforms at the moment.
-* [Popular Databases](references/databases.html) - Common databases in use and their strengths and weaknesses.
+
