@@ -17,6 +17,15 @@ Messing around with HTML/CSS and Javascript can be annoying on your local comput
 * [Codepen](http://codepen.io/) is a bit fancier, with paid-for plans for people wanting some extra features. ([cats Everywhere home page](http://codepen.io/anon/pen/xcteG))
 * [JsFiddle](http://jsfiddle.net/) is one of the older sites and has more of a focus on JavaScript. Check out the [home page](http://jsfiddle.net/TcJc8/).
 
+## Browser Tools
+
+One of the most frustrating parts of web development is debugging when something goes wrong. There has been a lot of work done in this area, and the major browsers now have good tools for debugging web pages directly in the browser.
+
+* Google Chrome comes with [Developer Tools](https://developers.google.com/chrome-developer-tools/)
+* Firefox has the [Firebug](https://addons.mozilla.org/en-US/firefox/addon/firebug/) add-on.
+
+Learning just the basics can save you hours and hours of painful debugging.
+
 ## References
 
 I always find it best to have a good solid reference by my side. Sometimes I just can't remember whether it is `text-align: center;` or `text-align: middle;` and spend half an hour wondering why it doesn't work. Here are some of the more popular online references:
