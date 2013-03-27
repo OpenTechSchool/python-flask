@@ -62,7 +62,13 @@
 	<div class="span3 well sidebar-nav">
       <ul class="nav nav-list">
       {% for p in site.map %} 
-        <li class="nav-header"><a href="{{site.baseurl}}{{p.path}}" alt="{{ p.caption }}">{{p.title}}</a></li>
+        <li class="nav-header">
+	  {% if p.path %}
+	  <a href="{{site.baseurl}}{{p.path}}" alt="{{ p.caption }}">{{p.title}}</a>
+	  {% else %}
+	  {{p.title}}
+	  {% endif %}
+	</li>
         {% for s in p.subpages %}
           <li><a href="{{site.baseurl}}{{s.path}}" alt="{{ s.caption }}">{{s.title}}</a></li>
         {% endfor %}
