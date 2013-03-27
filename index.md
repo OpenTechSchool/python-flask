@@ -57,7 +57,7 @@ These are all small focused libraries that provide just the bare essentials, but
 
 Of course the core workshop can't cover everything. But we've prepared these extra topics to guide you with things you might be interested in. You can pick-and-choose whichever ones you want, they are all independent of each other.
 
-* [Fancy HTML and CSS](extras/fancy.html)
+* [Learning HTML and CSS](extras/learning-html-css.html)
 * [Grid layouts](extras/grids.html)
 * [Sending emails](extras/email.html)
 * [AJAX and Web 2.0](extras/ajax.html)
