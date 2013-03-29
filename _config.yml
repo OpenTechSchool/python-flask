@@ -32,21 +32,12 @@ map:
  - title: Extras
    caption: Additional workshop content
    subpages:
-    - title: Fancy HTML and CSS
-      path: /extras/fancy.html
+    - title: Learning HTML and CSS
+      path: /extras/learn-html-css.html
       caption: 
-    - title: Grid layouts
-      path: /extras/grids.html
-      caption: 
-    - title: Sending emails
-      path: /extras/email.html
-      caption: 
-    - title: AJAX and Web 2.0
-      path: /extras/ajax.html
+    - title: Professional CSS
+      path: /extras/css.html
       caption: 
     - title: Using a database
       path: /extras/databases.html
-      caption: 
-    - title: Free hosting with Heroku!
-      path: /extras/heroku.html
       caption: 
