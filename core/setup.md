@@ -7,7 +7,7 @@ title: Setup
 
 # Python 2 or Python 3?
 
-There is currently a split in the Python community between Python 2 and Python 3. Though Python 3 has been around for some time now, there are still many programs which run on Python 2. It is very common in programming to have this sort of version split over time, as many programs can't keep up with the pace of change as a language evolves.
+There is currently a split in the Python language between versions 2 and 3. Although Python 3 has been around for some time now, there are still many programs which run on Python 2. It is very common in programming to have this sort of version split over time, as many programs can't keep up with the pace of change as a language evolves.
 
 For this workshop it is recommended to use Python 2.7, but we will try to keep things compatible with Python 3 users as well.
 
@@ -31,9 +31,9 @@ If you don't have 2.7 installed then you can download and install it here:
 
 # pip
 
-Python comes with a lot of built-in functionality in the form of modules. For example, we used the `turtle` module in the Introduction to Programming course. However, Python doesn't come with everything you might need. You can extend Python by adding new modules, which coem bundled up in `libraries`.
+Python comes with a lot of built-in functionality in the form of modules. For example, we used the `turtle` module in the Introduction to Programming course. However, Python doesn't come with everything you might need. You can extend Python by adding new modules, which come bundled up in `packages`.
 
-The `pip` command uses the [Python Packages Index](https://pypi.python.org/pypi) to install new Python libraries. This makes it super-easy to install Flask and other libraries that you might want to use in future, for example [Twitter](https://pypi.python.org/pypi/twitter/1.9.1) (to access the Twitter API to request data about Twitter) or [bashplotlib](https://pypi.python.org/pypi/bashplotlib/0.4.4) (to plot data on a graph in your terminal.)
+The `pip` command uses the [Python Packages Index](https://pypi.python.org/pypi) to install new Python packages. This makes it super-easy to install Flask and other packages that you might want to use in future, for example [Twitter](https://pypi.python.org/pypi/twitter/1.9.1) (to access the Twitter API to request data about Twitter) or [bashplotlib](https://pypi.python.org/pypi/bashplotlib/0.4.4) (to plot data on a graph in your terminal.)
 
 ## Windows
 
@@ -43,7 +43,7 @@ With `easy_install` you can use that to install `pip` using the command prompt:
 
 	$ C:\Python27\Scripts\easy_install pip
 
-Now you will have `pip` installed in the Scripts folder as well.
+Now you will have `pip` installed in the Scripts folder as well. If you like, you can ask us about adding the Python and scripts directories to the windows `PATH`; this will let you type `python` or `pip` at your command prompt directly.
 
 ## Mac OSX
 
@@ -59,9 +59,9 @@ Many Linux distributions include a package for pip. For example on Ubuntu you ca
 
 # virtualenv
 
-This part isn't required for Flask, but many people find it very useful to be able to separate their projects in terms of library installations and Python versions. You can skip over this section if you like, or come back to it later.
+This part isn't required for Flask, but many people find it very useful to be able to separate their projects in terms of package installations and Python versions. You can skip over this section if you like, or come back to it later.
 
-Virtualenv makes it easy to use Python 2.7 in one project and Python 3 in another. It also gives you a place to install libraries _per-project_, so you can have one project using Flask, another using Django, another using Bottle and their won't step all over each other.
+Virtualenv makes it easy to use Python 2.7 in one project and Python 3 in another. It also gives you a place to install libraries _per-project_, so you can have one project using Flask, another using Django, another using Bottle and they won't step all over each other.
 
 Installing on Windows is as easy as:
 
