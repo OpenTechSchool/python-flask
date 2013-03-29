@@ -59,10 +59,7 @@ Of course the core workshop can't cover everything. But we've prepared these ext
 
 * [Learning HTML and CSS](extras/learn-html-css.html)
 * [Professional CSS](extras/css.html)
-* [Sending emails](extras/email.html)
-* [AJAX and Web 2.0](extras/ajax.html)
 * [Using Databases](extras/databases.html)
-* [Free hosting with Heroku!](extras/heroku.html)
 
 # Reference material
 
