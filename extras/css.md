@@ -28,9 +28,12 @@ Learning a framework is similar to learning something like Flask. It can be a lo
 Here are some of the more popular frameworks used today:
 
 * [Twitter Bootstrap](http://twitter.github.com/bootstrap/) is one of the most popular. In some ways it has redefined what a standard web page looks like.
+* [Foundation](http://foundation.zurb.com/) is a good, fully featured alternative that works great with SASS css.
 * [Blueprint](http://www.blueprintcss.org/) is a bit older but very mature.
 * [YUI](http://yuilibrary.com/) comes from the Yahoo team. It's very comprehensive and covers a lot of JavaScript as well. You might like to play with the [grid builder](http://yui.github.com/gridbuilder/).
 * [1140](http://cssgrid.net/) is a contemporary 12-grid system for those who want just a little grid magic.
+
+Finally, there is a great compilation website comparing some of the most popular frameworks [here](http://usablica.github.com/front-end-frameworks/compare.html)!
 
 ## CSS Languages
 
