@@ -35,6 +35,14 @@
       
       #footer { text-align: center; }
 
+      .navbar h1 a, .navbar h1 {
+        color: #eee;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+        text-decoration: none;
+      }
+
      </style>
 </head>
 
@@ -42,9 +50,9 @@
     <div class="navbar navbar-inverse navbar-static-top">
       <div class="navbar-inner">
         <div class="container-fluid">
-	  <div class="brand">
-	      <a href="http://www.opentechschool.org/">OpenTechSchool</a>
-	      - <a href="{{site.baseurl}}">{{site.title}}</a>
+	  <div class="row-fluid">
+	  <div class="span3"><a href="http://www.opentechschool.org/"><h1>OpenTechSchool</a></h1></div>
+	  <div class="span6"><h1><a href="{{site.baseurl}}/">{{site.title}}</a></h1></div>
 	  </div>
         </div>
       </div>
