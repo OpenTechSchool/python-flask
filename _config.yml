@@ -38,6 +38,9 @@ map:
     - title: Professional CSS
       path: /extras/css.html
       caption: 
+    - title: Keeping track of users
+      path: /extras/sessions.html
+      caption: Using flask sessions
     - title: Using a database
       path: /extras/databases.html
       caption: 
