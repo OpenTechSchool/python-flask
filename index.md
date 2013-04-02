@@ -59,6 +59,7 @@ Of course the core workshop can't cover everything. But we've prepared these ext
 
 * [Learning HTML and CSS](extras/learn-html-css.html) - More on creating web pages.
 * [Professional CSS](extras/css.html) - How the pros style their websites.
+* [Keeping track of users](extras/sessions.html) - Using sessions to persist data over multiple visits.
 * [Using Databases](extras/databases.html) - How to store data permanently.
 
 # Reference material
