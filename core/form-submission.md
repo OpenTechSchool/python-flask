@@ -26,7 +26,7 @@ Place this form inside the `<body>` section of the landing page. You can fiddle 
 
 Now the action attribute of the form is saying it will be posted to `signup.html`. We don't have any code for this URL at the moment, so it is time to make some!
 
-We are going to need to import more objects from Flask. We need `request` to get the form data, `redirect` to redirect the browser once we are done.
+We are going to need to import more objects from Flask. We need `request` to get the form data, `redirect` to redirect the browser once we are done. Add this to the top of your Python code:
 
 	from flask import request, redirect
 
@@ -57,3 +57,7 @@ At this stage We just print out the email address that's supplied. So when you s
 	    return redirect('/')
 
 Once we have printed the email address we still need a response to send back to the web browser. A common option is to send a HTTP _Redirect_ response. This tells the browser to go to another page. In our case we just send them back to the home page, `/`, which is served by the `hello_world()` function.
+
+# Try it out!
+
+Give it a whirl and see how the email addresses get printed to the console. Perhaps you would like to experiment by adding some extra form elements.

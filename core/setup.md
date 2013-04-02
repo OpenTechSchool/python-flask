@@ -31,7 +31,7 @@ If you don't have 2.7 installed then you can download and install it here:
 
 # pip
 
-Python comes with a lot of built-in functionality in the form of modules. For example, we used the `turtle` module in the Introduction to Programming course. However, Python doesn't come with everything you might need. You can extend Python by adding new modules, which come bundled up in `packages`.
+Python comes with a lot of built-in functionality in the form of modules. For example, we used the `turtle` module in the Introduction to Programming course. However, Python doesn't come with everything you might need. You can extend Python by adding new modules, which come bundled up in _packages_.
 
 The `pip` command uses the [Python Packages Index](https://pypi.python.org/pypi) to install new Python packages. This makes it super-easy to install Flask and other packages that you might want to use in future, for example [Twitter](https://pypi.python.org/pypi/twitter/1.9.1) (to access the Twitter API to request data about Twitter) or [bashplotlib](https://pypi.python.org/pypi/bashplotlib/0.4.4) (to plot data on a graph in your terminal.)
 
@@ -43,7 +43,7 @@ With `easy_install` you can use that to install `pip` using the command prompt:
 
 	$ C:\Python27\Scripts\easy_install pip
 
-Now you will have `pip` installed in the Scripts folder as well. If you like, you can ask us about adding the Python and scripts directories to the windows `PATH`; this will let you type `python` or `pip` at your command prompt directly.
+Now you will have `pip` installed in the Scripts folder as well. If you like, you can ask us about adding the Python and scripts directories to the windows PATH; this will let you type `python` or `pip` at your command prompt directly.
 
 ## Mac OSX
 

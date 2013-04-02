@@ -67,7 +67,7 @@ There are a couple of gotchas with select boxes:
 
         <option selected="selected" value="secret">Secret Sauce</option>
 
-* There is an attribute called `multiple` which allows multiple selections in the `<select>` tag. The only reason I mention this is recommend **never** using it.
+* There is an attribute called `multiple` which allows multiple selections in the `<select>` tag. The only reason I mention this is to recommend **never** using it.
 
 ## Checkbox
 
@@ -111,6 +111,6 @@ When clicked the browser knows it is time to submit the form data back to the se
 
 # From static to dynamic
 
-This ability to request and capture content from users is what changes a website from static to dynamic. Just about anyone can write an HTML page with static content and have it hosted by a webserver. But to accept data from users through `<form>` (or the more complicated JavaScript `XMLHttpRequest`), process it and store the result marks the shift from being an page author to a programmer.
+This ability to request and capture content from users is what changes a website from static to dynamic. Just about anyone can write an HTML page with static content and have it hosted by a webserver. But to accept data from users through `<form>` (or the more complicated JavaScript `XMLHttpRequest`), process it and store the result marks the shift from being a page author to a programmer.
 
 Now it is time to make our website a little more interactive. Move on to the next chapter to see how we'll use `<form>` to collect some email addresses.

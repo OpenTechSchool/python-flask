@@ -5,7 +5,9 @@ title: Data Structures in Python
 
 ---
 
-# Understanding data structures
+Now that we are receiving our email addresses it is time to store them. We haven't really covered the two main data structures in Python, so here is a brief introduction. If you are already comfortable with lists and dictionaries then you can move on to 'Storing email addresses' below.
+
+## Understanding data structures
 
 Back in the first session we introduced three of the most common data types used in programming: numbers, strings and booleans. We assigned those data types to variables one-by-one, like so:
 
@@ -19,7 +21,7 @@ But what if we need something more complicated, like a shopping list? Assigning 
 	  item_2 = "cheese"
 	  item_3 = "bread"
 
-## Lists
+### Lists
 
 Fortunately we don't have to do this. Instead, we have the ``list`` data type. An empty list is simply ``[]``
 
@@ -66,7 +68,7 @@ In summary:
 	  shopping_list.append("cookies")
 	  shopping_list.remove("cookies")
 
-## Dictionaries
+### Dictionaries
 
 The other main data type is the dictionary. The dictionary allows you to associate one piece of data (a "key") with another (a "value"). The analogy comes from real-life dictionaries, where we associate a word (the "key") with its meaning. It's a little harder to understand than a list, but Python makes them very easy to deal with.
 
@@ -125,7 +127,7 @@ Or add dictionaries to lists:
 
 Outside of Python, dictionaries are often called ``hash tables``, ``hash maps`` or just ``maps``.
 
-# Storing email addresses
+## Storing email addresses
 
 At the moment we don't have any way to store email addresses. But if we add a list to our website then we can keep them temporarily. Sure it will only stay around until the web server stops, but it is a good start.
 
@@ -142,7 +144,9 @@ Now in our `signup()` function we can add the email address instead of printing 
 	    print(email_addresses)
 	    return redirect('/')
 
-# Listing email addresses
+Check the output you get when submitting a form. It prints out the entire list every time.
+
+## Listing email addresses
 
 Printing out our email addresses to the console is a bit of a hassle. If you wanted to read the list then you have to open the terminal and scan through for the printout. It would be so much easier to have a web page that lists all the email addresses that we have collected.
 
@@ -177,3 +181,12 @@ Here is the content of `email.html` for the _templates_ directory:
 
 {% endraw %}
 
+Check out the _for_ loop that we use in the template. It is similar to the one used in Python but subtly different. You can see it doesn't contain the `:` at the end of the first line, and it needs an `endfor` statement to end the loop.
+
+## Success!
+
+That's it, you're done! You've officially built a website! There are a lot of ways to go from here depending on what you would like to do. We have a couple of sections in the Extras area if you would like to continue to do some more with HTML/CSS and using a real database.
+
+If you feel like trying out some other frameworks then check out our list in the Reference section of the home page of this workshop.
+
+Congratulations on completing the Websites with Python Flask workshop. We hope you enjoyed it and encourage you to keep going on the path to web-glory!

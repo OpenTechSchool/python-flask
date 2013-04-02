@@ -5,15 +5,15 @@ title: Websites with Python Flask
 
 ---
 
-This is the course content for Websites with Python Flask, which has been developed and maintained by OpenTechSchool.
+This is the course content for Websites with Python Flask, which has been developed and maintained by [OpenTechSchool](http://www.opentechschool.org).
 
 # Welcome
 
-Hi, welcome to Websites with Python Flask. In this workshop we will take you through the fundamentals of creating a dynamic websites using the Python Flask library. After the workshop you should have a rough mental picture of how websites work and some good pointers for getting further with websites of your own.
+Hi, welcome to Websites with Python Flask. In this workshop we will take you through the fundamentals of creating dynamic websites using the Python Flask library. After the workshop you should have a rough mental picture of how websites work and some good pointers for getting further with websites of your own.
 
-We only expect you to know a little Python, like from our [Introduction to Programming](http://opentechschool.github.com/python-beginners/en/index.html) workshop. You definitely do not need to know a lot. It will be best if you have a recent version of Python installed as well (version 3 or higher).
+We only expect you to know a little Python, like from our [Introduction to Programming](http://opentechschool.github.com/python-beginners/en/index.html) workshop. You definitely do not need to know a lot. It will be best if you have a recent version of Python installed as well (version 2.7 or 3+).
 
-Don't worry if you know only a little HTML or none at all. We'll be looking at how it all works rather than how to make it look pretty.
+Don't worry if you know only a little HTML or none at all. We'll be looking at how it all works rather than how to make it look pretty. HTML is important, but it's only one part of making a website.
 
 ## What we'll do today
 
@@ -23,7 +23,7 @@ But we don't have any code yet.
 
 Instead we'll make a _landing page_, letting the internet know that a new era of cat pictures will soon begin. People can submit their email address to learn more when the real site goes live. By storing those addresses we'll have a ready-made audience when the time comes to announce the real thing.
 
-We'll be using Python Flask as the web server. Cat lovers will be able to point their web browsers at our site, enter their email address, and hold their breath for our launch!
+We'll be using Python Flask as the web server. Cat lovers will be able to point their web browsers at our site, enter their email address, and hold their breath for the exciting launch!
 
 ## A bit of history
 
@@ -57,9 +57,9 @@ These are all small focused libraries that provide just the bare essentials, but
 
 Of course the core workshop can't cover everything. But we've prepared these extra topics to guide you with things you might be interested in. You can pick-and-choose whichever ones you want, they are all independent of each other.
 
-* [Learning HTML and CSS](extras/learn-html-css.html)
-* [Professional CSS](extras/css.html)
-* [Using Databases](extras/databases.html)
+* [Learning HTML and CSS](extras/learn-html-css.html) - More on creating web pages.
+* [Professional CSS](extras/css.html) - How the pros style their websites.
+* [Using Databases](extras/databases.html) - How to store data permanently.
 
 # Reference material
 

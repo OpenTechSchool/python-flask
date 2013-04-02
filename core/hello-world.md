@@ -14,9 +14,9 @@ The HyperText Transfer Protocol is the network communication between your web br
 There are two main types of request, `GET` and `POST`.
 
 * The browser sends a `GET` request to retrieve data. For example, going to `http://www.opentechschool.org/team.html` will cause the browser to send `GET /team.html` to the server.
-* The `POST` request is used to send data. For example if you fill out a web form and click `Submit` it will send the form data back to the server.
+* The `POST` request is used to send data. For example if you fill out a web form and click _Submit_ it will send the form data back to the server.
 
-We will be doing both GET and POST requests today. First we'll handle a GET request with the Hello World example. Then in a later chapter we will try POST.
+We will be doing both GET and POST requests today. First we'll handle a GET request with the Hello World example. Then in a later chapter we will try POST to receive an email address.
 
 # Hello World - A Static Website
 
@@ -46,7 +46,7 @@ This imports the Flask library and creates a new website in a variable called `a
 	def hello_world():
 		return 'Hello World!'
 
-The `@` is new, it's called a _decorator_ and it is used to give meaning to function definitions. In this case it says that if the browser requests the address `/`, then the website should _route_ that request to the `hello_world` function.
+The `@` is new, it's called a [_decorator_](http://en.wikipedia.org/wiki/Python_syntax_and_semantics#Decorators) and it is used to give meaning to function definitions. In this case it says that if the browser requests the address `/`, then the website should _route_ that request to the `hello_world` function.
 
 The function itself returns the string "Hello World!". This will be sent to the web browser.
 
