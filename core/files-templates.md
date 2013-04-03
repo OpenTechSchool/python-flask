@@ -9,13 +9,13 @@ title: Files & Templates
 
 So you've seen how to send out some basic text with a simple Flask application, and the languages that are used to build the web: HTML, CSS and Javascript. Serving text isn't enough though - what if we want to serve some actual files?
 
-Luckily, Flask comes prepared. All you have to do is **create a folder** in the same directory as `hello.py` with the special name of `static`. Any file you put in that folder will be served by Flask automatically! It's one of the nice functionalities provided to you by Flask's authors.
+Luckily, Flask comes prepared. All you have to do is **create a folder** in the same directory as `catseverywhere.py` with the special name of `static`. Any file you put in that folder will be served by Flask automatically! It's one of the nice functionalities provided to you by Flask's authors.
 
 You can do this with your computer's file browser, or on the command line by typing `mkdir static`.
 
 So, if you made a file in the static folder called `cats.gif`, and you'd normally access your application by visiting the url [http://127.0.0.1:5000](http://127.0.0.1:5000), then you can view that file by going to [http://127.0.0.1:5000/static/cats.gif](http://127.0.0.1:5000/static/cats.gif).
 
-**Check this works** for you by downloading a funny image from the internet (there are plenty at [imgur](http://imgur.com)), putting it in the static folder, running your Flask application (`python hello.py`), and browsing to your image by the right url.
+**Check this works** for you by downloading a funny image from the internet (there are plenty at [imgur](http://imgur.com)), putting it in the static folder, running your Flask application (`python catseverywhere.py`), and browsing to your image by the right url.
 
 The `static` folder is a great place to put CSS stylesheets, Javascript script files, and images. Those files don't usually change much when a website is running, hence the folder name. A common practice is that web developers will organise these files in sub-directories called, for instance, `css`, `js`, and `img` respectively. 
 
@@ -76,4 +76,67 @@ Now that we have a bit more confidence in changing the home page we can look at 
 
 This means fancy fonts, large bold type, huge banner images and nice round corners and things. We are going to need some more interesting HTML and a fair bit of CSS to get it looking pretty.
 
-We've prepared a self-contained template that you can use for the home page. You can download it [here](code/templates/files-templates.html) and save it as `index.html` in your templates directory.
+We've prepared a self-contained template that you can use for the home page. You can download it [here](https://github.com/OpenTechSchool/python-flask-code/blob/master/core/files-templates/templates/index.html) and save it as `index.html` in your templates directory.
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    	<meta charset="utf-8">
+    	<title>Cats Everywhere!</title>	
+    
+    	<link     href='http://fonts.googleapis.com/css?family=Sintony:400,700'     rel='stylesheet' type='text/css'>
+    
+    	<style type="text/css">    
+      body
+      {
+        background-color:#000;
+      }
+    
+      h1
+      {
+        font-size:48px;
+        margin-top:0;
+        font-family:Arial, sans-serif;
+        text-shadow:2px 0 15px #292929;
+        letter-spacing:4px;
+        text-decoration:none;
+        color:#DDD;
+      }
+    
+      #banner
+      {
+        width:500px;
+        height:200px;
+        text-align:center;
+        background-image:url(http://i.imgur.com/MQHYB.jpg);
+        background-repeat:no-repeat;
+        border-radius:5px;
+        margin:90px auto auto;
+        padding:80px 0;
+      }
+    
+      .lead
+      {
+        background-color:rgba(255,255,255,0.6);
+        border-radius:3px;
+        box-shadow:rgba(0,0,0,0.2) 0 1px 3px;
+        font-family:Sintony, sans-serif;
+      }
+    	</style>
+    
+    </head>  
+      
+    <body>
+    	<div id="banner">
+    		<h1>cats everywhere</h1>
+    		<p class="lead">We're bringing cats to the internet. Free.     Cute. Awesome.</p>
+    	</div>
+    	<div id="emailform">
+    		
+    	</div>
+    </body>
+    </html>
+
+It should look a little something like this:
+
+![](https://pbs.twimg.com/media/BGPsFh9CYAAcrct.png:large)

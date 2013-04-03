@@ -5,7 +5,7 @@ title: Forms
 
 ---
 
-You've probably seen HTML forms a billion times already:
+Now that we have a pretty home page it's time to put a _form_ on it. This will let people submit their email address. You've probably seen HTML forms a billion times already. Now we will take a brief tour of how forms work:
 
 ![HTML Sample Form](images/sample_web_form.png)
 

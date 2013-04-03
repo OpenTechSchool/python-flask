@@ -22,7 +22,7 @@ We will be doing both GET and POST requests today. First we'll handle a GET requ
 
 In the early days people would write HTML files in a directory being watched by an Apache server. It was simple, but limiting. The content was _static_, with no way to make it change without editing the files on the server. Today we are going to start with something just as simple. This is the [Quickstart example](http://flask.pocoo.org/docs/quickstart/) from the Flask documentation.
 
-Open a new file called `hello.py` in your workshop directory. This might look a little cryptic:
+Open a new file called `catseverywhere.py` in your workshop directory. This might look a little cryptic:
 
 	from flask import Flask
 	app = Flask(__name__)
@@ -57,7 +57,7 @@ This is Python for  "if this script is run directly then start the application".
 
 Now you can start running your first website!
 
-	$ python hello.py 
+	$ python catseverywhere.py 
 	 * Running on http://127.0.0.1:5000/
 
 Open that address in your browser! It probably looks something like this:

@@ -160,7 +160,7 @@ Here the `render_template()` function takes the name of the template (`'emails.h
 
 Now we need our HTML template. In our previous template we didn't actually do anything but plain HTML. But now we need to print the list of email addresses, so we'll use a `for` loop in the template.
 
-Here is the content of `email.html` for the _templates_ directory:
+Here is the content of `emails.html` for the _templates_ directory:
 
 {% raw %}
 

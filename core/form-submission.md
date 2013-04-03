@@ -20,7 +20,7 @@ The form is simple enough:
 		<input type="submit" value="Signup"></input>
 	</form>
 
-Place this form inside the `<body>` section of the landing page. You can fiddle around a bit to get it in the place you want.
+Place this form inside the `<body>` section of `index.html`. You can fiddle around a bit to get it in the place you want.
 
 # Python route
 
@@ -60,4 +60,4 @@ Once we have printed the email address we still need a response to send back to 
 
 # Try it out!
 
-Give it a whirl and see how the email addresses get printed to the console. Perhaps you would like to experiment by adding some extra form elements.
+Give it a whirl and see how the email addresses get printed to the console. Perhaps you would like to experiment by adding some extra form elements such as a text box for a name, or a checkbox for also including dogs.

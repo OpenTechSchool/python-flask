@@ -25,6 +25,8 @@ Instead we'll make a _landing page_, letting the internet know that a new era of
 
 We'll be using Python Flask as the web server. Cat lovers will be able to point their web browsers at our site, enter their email address, and hold their breath for the exciting launch!
 
+We've put the final product online so you can see what we are aiming to do today. Here is the [home page](http://python-flask-code.herokuapp.com/) where people can enter their email address and the [emails page](http://python-flask-code.herokuapp.com/emails.html) where you can view the list of submitted emails.
+
 ## A bit of history
 
 Websites as we know them today started in 1991 from the work of Tim Berners-Lee at CERN. Most websites were static content; simple HTML pages stored on disk and sent directly to the browser. If people wanted to interact with others then they would have to do it by other means, such as email or USENET.
