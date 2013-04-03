@@ -61,6 +61,7 @@ Of course the core workshop can't cover everything. But we've prepared these ext
 * [Professional CSS](extras/css.html) - How the pros style their websites.
 * [Keeping track of users](extras/sessions.html) - Using sessions to persist data over multiple visits.
 * [Using Databases](extras/databases.html) - How to store data permanently.
+* [Hosting on Heroku](extras/heroku.html) - Host your website for free online using Heroku.
 
 # Reference material
 

@@ -44,3 +44,6 @@ map:
     - title: Using a database
       path: /extras/databases.html
       caption: 
+    - title: Hosting on Heroku
+      path: /extras/heroku.html
+      caption: Host your website for free online using Heroku.
