@@ -164,6 +164,7 @@ Here is the content of `emails.html` for the _templates_ directory:
 
 {% raw %}
 
+	<!DOCTYPE html>
 	<html>
 	  <head>
 	    <title>Cats Everywhere email addresses</title>
