@@ -55,6 +55,8 @@ These are all small focused libraries that provide just the bare essentials, but
 * [Form Submission](core/form-submission.html) - Receiving and processing the form.
 * [Data Structures](core/data.html) - Storing our emails and displaying dynamic lists in web pages.
 
+Want to compare your code? You can browse the code examples directly on GitHub [here](https://github.com/OpenTechSchool/python-flask-code). We've organised it by section. You can see the source code for the final example [here](https://github.com/OpenTechSchool/python-flask-code/tree/master/core/data).
+
 # Extra fun stuff
 
 Of course the core workshop can't cover everything. But we've prepared these extra topics to guide you with things you might be interested in. You can pick-and-choose whichever ones you want, they are all independent of each other.
