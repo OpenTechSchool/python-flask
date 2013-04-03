@@ -5,7 +5,7 @@ title: Coach Guide
 
 ---
 
-Thanks for coaching! Check out the [coaching guide](http://opentechschool.github.com/slides/presentations/coaching/)
+Thanks for coaching! Check out the generic [OpenTechSchool coaching guide](http://opentechschool.github.com/slides/presentations/coaching/) as well!
 
 ## Python
 
