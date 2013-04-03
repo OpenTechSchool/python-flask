@@ -11,17 +11,22 @@ Once you are comfortable with CSS rules and properties you might start to wonder
 
 CSS Frameworks make it easier to manage styles for these larger, more complicated websites. All usually have the same key features:
 
-* Style reset. Internet Explorer's `<h3>` tag might not look the same as Google Chrome's `<h3>` tag. Frameworks start their CSS with a bunch of directives redefining most HTML tags to a common styling.
-* Grid Layout. You may be wondering how we get websites with multiple columns and nice box layouts. Traditionally it was all done with manual `<div>` styling. But now frameworks define a grid layout, usually with something like 12 columns per row, so you can just use something like the following for a two-column layout.
+**Style reset**.  Internet Explorer's `<h3>` tag might not look the same as Google Chrome's `<h3>` tag. Frameworks start their CSS with a bunch of directives redefining most HTML tags to a common styling.
+
+**Grid Layout**. You may be wondering how we get websites with multiple columns and nice box layouts. Traditionally it was all done with manual `<div>` styling. But now frameworks define a grid layout, usually with something like 12 columns per row.
+
+Here is an example of a two-column layout:
+
 
 	<div class="row">
 		<div class="column-3">Left sidebar</div>
 		<div class="column-9">Main content</div>
 	</div>
 
-* Typographical reset. This is a font reset that looks a little more pleasing to the eye. It sets things like line spacing and font size.
-* Form styles. Because the default form buttons and input boxes look boring these days.
-* Extra components. Many frameworks provide things like a menu bar system that can turn a `<ul>` tag into a pretty menu, or styled boxes for showing `<img>` tags in.
+**Typographical reset**. This is a font reset that looks a little more pleasing to the eye. It sets things like line spacing and font size.
+
+**Form styles**. Because the default form buttons and input boxes look boring these days.
+**Extra components**. Many frameworks provide things like a menu bar system that can turn a `<ul>` tag into a pretty menu, or styled boxes for showing `<img>` tags in.
 
 Learning a framework is similar to learning something like Flask. It can be a lot of work to get started, but over time it enables you to do things a lot quicker and still keep a decent amount of control. Things like a properly maintained grid system can save days of headaches with cross-browser compatibility.
 
