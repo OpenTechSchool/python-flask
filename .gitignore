@@ -1,6 +1,4 @@
 *.swp
 _site/
 *~
-.venv*
-emails.db
 
