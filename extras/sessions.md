@@ -64,3 +64,9 @@ Here, we use a few `if` checks to make sure that our user added an email address
 **Try out the new functionality!** Add an email address, and then visit `/unregister` in your web browser. When you next look at the list, your email address should have been removed!
 
 ### Extensions
+
+* Change the `/unregister` route to be a POST method only. Normally URLs that change data should only be POSTed to - otherwise a user might be tricked into changing data just from their browser accessing a link! After that, add a button / form on your main page that can send a POST to that route so your users can still unregister their email address.
+
+* Allow the app to remember when a user has already registered their email, and not show them an email input form when they have (maybe say Thanks! for signing up). Check out the [Jinja2 template documentation](http://jinja.pocoo.org/docs/templates/) if you'd like to use a little template logic to help with this. You could change the above button so that it also only shows after registering an email.
+
+* Add a "protected" page which allows you to delete any email address, and a very simple admin login system (with just a single password) to access it. You can use a session to determine whether someone is currently logged in or not. This might be a little more difficult, but any challengers are welcome to try it out! You can check out the code sample [here](http://flask.pocoo.org/docs/quickstart/#sessions) for some hints on how to go about that.
