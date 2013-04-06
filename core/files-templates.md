@@ -76,7 +76,7 @@ Now that we have a bit more confidence in changing the home page we can look at 
 
 This means fancy fonts, large bold type, huge banner images and nice round corners and things. We are going to need some more interesting HTML and a fair bit of CSS to get it looking pretty.
 
-We've prepared a self-contained template that you can use for the home page. You can download it [here](https://github.com/OpenTechSchool/python-flask-code/blob/master/core/files-templates/templates/index.html) and save it as `index.html` in your templates directory.
+We've prepared a self-contained template that you can use for the home page. You can download it [here](https://raw.github.com/OpenTechSchool/python-flask-code/master/core/files-templates/templates/index.html) and save it as `index.html` in your templates directory.
 
     <!DOCTYPE html>
     <html lang="en">
