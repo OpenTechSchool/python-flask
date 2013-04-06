@@ -75,11 +75,15 @@ You might notice that the list of emails now looks a little strange on the web p
 
 So every email is actually a list. The email itself is at position 0 in the list. So update the emails template to use position 0:
 
+{% raw %}
+
     <ul>
       {% for email in email_addresses %}
       <li>{{ email[0] }}</li>
       {% endfor %}
     </ul>
+
+{% endraw %}
 
 And that's it! You can now restart the web server as many times as you like! All the emails are now stored directly in the database.
 
