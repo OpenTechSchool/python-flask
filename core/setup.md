@@ -49,7 +49,9 @@ Now you will have `pip` installed in the Scripts folder as well. If you like, yo
 
 The `pip` command might already be installed, try running `pip` in the command prompt. If that didn't work then try:
 
-	sudo easy_install pip
+	sudo easy_install pip==1.2.1
+
+On Mac OSX we use an older version of `pip` to workaround errors in the Mac OSX installation of OpenSSL. Details [here](https://github.com/pypa/pip/issues/829).
 
 ## Linux
 
@@ -91,7 +93,7 @@ On Windows:
 
 	# Create the directory for this workshop
 	mkdir flask-workshop
-	dir flask-workshop
+	cd flask-workshop
 	# Create a Python 2.7 virtualenv under the 'venv' directory
 	C:\Python27\Scripts\virtualenv venv
 	# Activate the virtual environment
