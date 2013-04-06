@@ -36,7 +36,7 @@ Now we can add our new route for `signup.html`.
 	def signup():
 	    email = request.form['email']
 	    print("The email address is '" + email + "'")
-	    return redirect('/'))
+	    return redirect('/')
 
 This gets a little complicated, so we'll go through it line-by-line:
 
