@@ -21,7 +21,7 @@ It sure does, and they're very simple to use. Firstly, **add `session` as anothe
     
 Then you need to give flask a secret key to use, to make sure the session is secure. To get a nice secret key, **run this at a command prompt**:
 
-     python -c "import os; print repr(os.urandom(24))"
+    python -c "import os; print repr(os.urandom(24))"
      
 and copy the string you get. To set this as the flask app's secret key, just **add the following line** after you initialize your `app` (use your own key!):
 
@@ -69,4 +69,8 @@ Here, we use a few `if` checks to make sure that our user added an email address
 
 * Allow the app to remember when a user has already registered their email, and not show them an email input form when they have (maybe say Thanks! for signing up). Check out the [Jinja2 template documentation](http://jinja.pocoo.org/docs/templates/) if you'd like to use a little template logic to help with this. You could change the above button so that it also only shows after registering an email.
 
+Extra points:
+
 * Add a "protected" page which allows you to delete any email address, and a very simple admin login system (with just a single password) to access it. You can use a session to determine whether someone is currently logged in or not. This might be a little more difficult, but any challengers are welcome to try it out! You can check out the code sample [here](http://flask.pocoo.org/docs/quickstart/#sessions) for some hints on how to go about that.
+
+* Integrate these features into using your databases as needed

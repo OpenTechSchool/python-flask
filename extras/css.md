@@ -17,11 +17,10 @@ CSS Frameworks make it easier to manage styles for these larger, more complicate
 
 Here is an example of a two-column layout:
 
-
-	<div class="row">
-		<div class="column-3">Left sidebar</div>
-		<div class="column-9">Main content</div>
-	</div>
+    <div class="row">
+      <div class="column-3">Left sidebar</div>
+      <div class="column-9">Main content</div>
+    </div>
 
 **Typographical reset**. This is a font reset that looks a little more pleasing to the eye. It sets things like line spacing and font size.
 
@@ -46,18 +45,18 @@ There are in fact a few entire languages that are dedicated to CSS. These langua
 
 A common problem is how to deal with colours. For example if you had a corporate colour scheme of `#3311FF` your CSS would be littered with `#3311FF` references:
 
-	.nav { background-color: #3311FF; }
-	.button { border-color: #3311FF; }
-	.cake .icing { color: #3311FF; }
+    .nav { background-color: #3311FF; }
+    .button { border-color: #3311FF; }
+    .cake .icing { color: #3311FF; }
 
 In a CSS language you would be able to use a variable instead:
 
-	$corporate_color: #3311FF;
-	.nav { background-color: $corporate_color; }
-	.button { border-color: $corporate_color; }
-	.cake .icing { color: $corporate_color; }
+    $corporate_color: #3311FF;
+    .nav { background-color: $corporate_color; }
+    .button { border-color: $corporate_color; }
+    .cake .icing { color: $corporate_color; }
 
-Use of a CSS language is very common in large websites these days. Here are some of the more popular ones in use today:
+And if you later decided that the colour needed to be #3311EE instead, there would only be one place you needed to change it! Use of a CSS language is very common in large websites these days. Here are some of the more popular ones in use today:
 
 * [SASS](http://sass-lang.com/) is one of the original CSS languages. It uses the Ruby programming language under the hood. You might like to try the [Python](https://pypi.python.org/pypi/pyScss/1.1.5) port which is compatible with SASS 3.2. You can also take a look at [Compass](http://compass-style.org/) which pushes SASS even further.
 * [LESS](http://lesscss.org/) has a very similar philosophy. It is written in JavaScript, so it can either be run in the browser or, using Node, on the server.
