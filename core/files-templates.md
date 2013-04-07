@@ -66,7 +66,7 @@ You can see we imported a new function from `flask`, called `render_template`.
 
 Then in `hello_world()`, we added two variables called `author` and `name`. **Please change their values** from `"Me"` and `"You"` in your file, those are boring!
 
-Then instead of returning some text, we returned the result of calling `render_template`. First, we give it the file name of the template we wish to process. Then, we pass in the variable names that the template should know about (`author` and `name`) and what their values should be (...coincidentally, `author` and `name`!). This function should load up the template, do the proocessing required to replace placeholders with values, and return the full HTML text.
+Then instead of returning some text, we returned the result of calling `render_template`. First, we give it the file name of the template we wish to process. Then, we pass in the variable names that the template should know about (`author` and `name`) and what their values should be (...coincidentally, `author` and `name`!). This function should load up the template, do the processing required to replace placeholders with values, and return the full HTML text.
 
 Now try running and viewing your app, in all its HTML glory!
 

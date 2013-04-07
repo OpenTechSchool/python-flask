@@ -49,7 +49,7 @@ To remove an item from the list we use ``remove()``:
 Lists can easily be processed in a ``for`` loop. Have a look at this example which prints each item of the list in a new row:
 
     for item in shopping_list:
-    print(item)
+        print(item)
 
 And that's it! Python also makes it really easy to check if something is in a list or not:
 
@@ -97,7 +97,7 @@ If the key isn't found in the dictionary, a `KeyError` occurs:
 
     >>> foods["cheese"]
     Traceback (most recent call last):
-    File "<stdin>", line 1, in <module>
+      File "<stdin>", line 1, in <module>
     KeyError: 'cheese'
 
 For this reason, you can test whether a key is in the dictionary or not, by using the keyword `in`:
