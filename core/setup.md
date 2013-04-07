@@ -41,7 +41,7 @@ To install pip on Windows, download and run [distribute_setup.py](http://python-
 
 With `easy_install` you can use that to install `pip` using the command prompt:
 
-	$ C:\Python27\Scripts\easy_install pip
+    $ C:\Python27\Scripts\easy_install pip
 
 Now you will have `pip` installed in the Scripts folder as well. If you like, you can ask us about adding the Python and scripts directories to the windows PATH; this will let you type `python` or `pip` at your command prompt directly.
 
@@ -49,7 +49,7 @@ Now you will have `pip` installed in the Scripts folder as well. If you like, yo
 
 The `pip` command might already be installed, try running `pip` in the command prompt. If that didn't work then try:
 
-	sudo easy_install pip==1.2.1
+    sudo easy_install pip==1.2.1
 
 On Mac OSX we use an older version of `pip` to workaround errors in the Mac OSX installation of OpenSSL. Details [here](https://github.com/pypa/pip/issues/829).
 
@@ -57,7 +57,7 @@ On Mac OSX we use an older version of `pip` to workaround errors in the Mac OSX 
 
 Many Linux distributions include a package for pip. For example on Ubuntu you can install it with:
 
-	sudo apt-get install python-pip
+    sudo apt-get install python-pip
 
 # virtualenv
 
@@ -67,37 +67,37 @@ Virtualenv makes it easy to use Python 2.7 in one project and Python 3 in anothe
 
 Installing on Windows is as easy as:
 
-	c:\Python27\Scripts\pip install virtualenv
+    c:\Python27\Scripts\pip install virtualenv
 
 On OSX, try
 
-	sudo pip install virtualenv
+    sudo pip install virtualenv
 
 To install on Linux you can often find virtualenv already packaged for you. For example on Ubuntu you can do:
 
-	sudo apt-get install python-virtualenv
+    sudo apt-get install python-virtualenv
 	
 Now that it is installed, we can set up virtualenv for this workshop. This will keep Flask and it's dependencies contained to just this workshop:
 
 On OSX and Linux:
 
-	# Create the directory for this workshop
-	mkdir flask-workshop
-	cd flask-workshop
-	# Create a Python 2.7 virtualenv under the 'venv' directory
-	virtualenv --python=python2.7 venv
-	# Activate the virtual environment
-	source venv/bin/activate
+    # Create the directory for this workshop
+    mkdir flask-workshop
+    cd flask-workshop
+    # Create a Python 2.7 virtualenv under the 'venv' directory
+    virtualenv --python=python2.7 venv
+    # Activate the virtual environment
+    source venv/bin/activate
 	
 On Windows:
 
-	# Create the directory for this workshop
-	mkdir flask-workshop
-	cd flask-workshop
-	# Create a Python 2.7 virtualenv under the 'venv' directory
-	C:\Python27\Scripts\virtualenv venv
-	# Activate the virtual environment
-	venv\Scripts\activate
+    # Create the directory for this workshop
+    mkdir flask-workshop
+    cd flask-workshop
+    # Create a Python 2.7 virtualenv under the 'venv' directory
+    C:\Python27\Scripts\virtualenv venv
+    # Activate the virtual environment
+    venv\Scripts\activate
 
 The last step, _activate_ sets your terminal/command prompt session for using the Python installation in the `flask-workshop` directory. If you start up a new terminal then you will need to repeat the activation step again.
 
@@ -111,7 +111,7 @@ So far as website frameworks go, Flask has a minimal number of libraries that it
 
 Now that everything is set up, installing Flask is as easy as:
 
-	pip install flask
+    pip install flask
 
 ## On Python 3
 
@@ -119,12 +119,12 @@ Though the official Flask doesn't run on Python 3, someone has kindly done the w
 
 With `pip`, you can install Flask with this:
 
-	pip install https://github.com/puzzlet/itsdangerous/tarball/py3 https://github.com/puzzlet/werkzeug/tarball/py3 https://github.com/puzzlet/flask/tarball/py3
+    pip install https://github.com/puzzlet/itsdangerous/tarball/py3 https://github.com/puzzlet/werkzeug/tarball/py3 https://github.com/puzzlet/flask/tarball/py3
 
 If you don't feel like installing them all at once you can do it one-by-one:
 
-	pip install https://github.com/puzzlet/itsdangerous/tarball/py3
-	pip install https://github.com/puzzlet/werkzeug/tarball/py3
-	pip install https://github.com/puzzlet/flask/tarball/py3
+    pip install https://github.com/puzzlet/itsdangerous/tarball/py3
+    pip install https://github.com/puzzlet/werkzeug/tarball/py3
+    pip install https://github.com/puzzlet/flask/tarball/py3
 
 Then you are good to go with Flask on Python 3.

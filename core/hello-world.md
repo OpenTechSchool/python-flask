@@ -24,34 +24,33 @@ In the early days people would write HTML files in a directory being watched by 
 
 Open a new file called `catseverywhere.py` in your workshop directory. This might look a little cryptic:
 
-	from flask import Flask
-	app = Flask(__name__)
+    from flask import Flask
+    app = Flask(__name__)
 
-	@app.route('/')
-	def hello_world():
-		return 'Hello World!'
+    @app.route('/')
+    def hello_world():
+        return 'Hello World!'
 
-	if __name__ == '__main__':
-		app.run()
-
+    if __name__ == '__main__':
+        app.run()
 
 Let's break it down a little:
 
-	from flask import Flask
-	app = Flask(__name__)
+    from flask import Flask
+    app = Flask(__name__)
 
 This imports the Flask library and creates a new website in a variable called `app`.
 
-	@app.route('/')
-	def hello_world():
-		return 'Hello World!'
+    @app.route('/')
+    def hello_world():
+        return 'Hello World!'
 
-The `@` is new, it's called a [_decorator_](http://en.wikipedia.org/wiki/Python_syntax_and_semantics#Decorators) and it is used to give meaning to function definitions. In this case it says that if the browser requests the address `/`, then the website should _route_ that request to the `hello_world` function.
+The `@` is new, it's called a [_decorator_](http://en.wikipedia.org/wiki/Python_syntax_and_semantics#Decorators) and it is used to 'augment' function definitions. Flask uses `route()` to say that if the browser requests the address `/`, then the website should _route_ that request to the `hello_world` function.
 
 The function itself returns the string "Hello World!". This will be sent to the web browser.
 
-	if __name__ == '__main__':
-		app.run()
+    if __name__ == '__main__':
+        app.run()
 
 This is Python for  "if this script is run directly then start the application".
 

@@ -13,7 +13,7 @@ This one comes from the world renowned Web 2.0 startup company "The Corner Pizza
 
 Forms start with the `<form>` tag. This marks the start of the form area, and can surround basically anything inside the HTML body. A form area starts like this:
 
-	<form action="post.html" method="post">
+    <form action="post.html" method="post">
 
 This means: this form sends an HTTP _POST_ to a page on the server called `post.html`.
 
@@ -25,7 +25,7 @@ Inside the `<form>` tag there are a number of different `<input>` tags available
 
 The text input element allows people to type in one line of text. The input type is `text`.
 
-	<input type="text" name="name"></input>
+    <input type="text" name="name"></input>
 
 Whatever is typed into this text box will be sent to the server with the variable `name`.
 
@@ -50,10 +50,10 @@ Here we can see that each `<input>` has a type of `radio` and _the same name_, `
 Select input is a little trickier. The `<select>` tag groups a list of `<option>` tags. Like this:
 
     <select name="sauce">
-        <option value="tomato">Tomato</option>
-        <option value="barbeque">Barbeque</option>
-        <option value="mayonnaise">Mayonnaise</option>
-        <option value="secret">Secret Sauce</option>
+      <option value="tomato">Tomato</option>
+      <option value="barbeque">Barbeque</option>
+      <option value="mayonnaise">Mayonnaise</option>
+      <option value="secret">Secret Sauce</option>
     </select>
 
 When sent back to the server the browser will use the variable name `sauce` and the value of the selected option.
@@ -65,7 +65,7 @@ There are a couple of gotchas with select boxes:
 * There is no built-in way to say "Select an option..." when the user has not selected an option yet. Although this is a very common scenario, and the browser automatically selects the first option which may be confusing. In HTML you have to specifically create a `<option>` tag containing "Select an option...".
 * To automatically select an option when the page loads you can use the `selected` attribute on the option, like this:
 
-        <option selected="selected" value="secret">Secret Sauce</option>
+    <option selected="selected" value="secret">Secret Sauce</option>
 
 * There is an attribute called `multiple` which allows multiple selections in the `<select>` tag. The only reason I mention this is to recommend **never** using it.
 
@@ -95,7 +95,7 @@ When both are selected this will send back _one_ variable, `extras`, containing 
 
 When you want more than a single line of text from a user you can use the `<textarea>` tag:
 
-	<textarea name="delivery" cols="50" rows="4"></textarea>
+    <textarea name="delivery" cols="50" rows="4"></textarea>
 
 It even has the archaic `cols` and `rows` attributes, which hark back to the days of green-screen text terminals. These attributes decide the size of the textarea, but generally you should just use CSS.
 
@@ -105,7 +105,7 @@ It even has the archaic `cols` and `rows` attributes, which hark back to the day
 
 To get everything back to the server you need a submit button:
 
-	<input type="submit" value="Send my Order">
+    <input type="submit" value="Send my Order">
 
 When clicked the browser knows it is time to submit the form data back to the server. The browser gathers all the data in the `<input>`, `<select>` and `<textarea>` tags and sends them to the URL mentioned in the action element of the `<form>` tag.
 

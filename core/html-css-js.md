@@ -15,8 +15,8 @@ All web browsers handle the four fundamental technologies of the web. We've alre
 
 The HyperText Markup Language. This is a file containing most of the text content of a web page and has a `.html` extension. The text is wrapped in _tags_ to give them meaning. A snippet of HTML might look like this:
 
-	<blockquote>Nerds like us are allowed to be unironically enthusiastic about stuff. Nerds are allowed to love stuff - like, jump-up-and-down-in-your-chair-can't-control-yourself love it. When people call other people nerds, mostly what they're saying is "You like stuff", which is not a good insult at all. Like, "You are too enthusiastic about the miracle of human consciousness".</blockquote>
-	<div class="cite">John Green</div>
+    <blockquote>Nerds like us are allowed to be unironically enthusiastic about stuff. Nerds are allowed to love stuff - like, jump-up-and-down-in-your-chair-can't-control-yourself love it. When people call other people nerds, mostly what they're saying is "You like stuff", which is not a good insult at all. Like, "You are too enthusiastic about the miracle of human consciousness".</blockquote>
+    <div class="cite">John Green</div>
 
 And when the browser _renders_ the HTML it looks like this:
 
@@ -33,17 +33,17 @@ Cascading Style Sheets give the browser styling hints for the HTML. It has a `.c
 
 For the quote above we can do a stylesheet like this:
 
-     blockquote {
-		 background-color: black;
-		 color: yellow;
-		 padding: 10px;
-	 }
-	 
-	 .cite {
-		 text-align: right;
-		 font-weight: bold;
-		 font-size: x-large;
-	 }
+    blockquote {
+      background-color: black;
+      color: yellow;
+      padding: 10px;
+    }
+
+    .cite {
+      text-align: right;
+      font-weight: bold;
+      font-size: x-large;
+    }
 
 Each section in the stylesheet applies to a different set of tags. The first section applies to any ``blockquote`` tags. The second section applies to any tags which have the attribute ``class="cite"`` as part of their name (like the second tag in the example.)
 
@@ -66,16 +66,16 @@ JavaScript is an entire programming language contained entirely within the brows
 This snippet of JavaScript will run in your browser and scan the current page for `blockquote` tags and give them a random color every 200 milliseconds (five times per second).
 
     function partypartyparty(event) {
-	  var blockquotes = document.getElementsByTagName('blockquote');
-	  for(var i=0; i<blockquotes.length; i++) {
-	    var r = Math.floor(Math.random()*255);
-        var g = Math.floor(Math.random()*255);
-        var b = Math.floor(Math.random()*255);
-        var e = blockquotes[i];
-		e.style.setProperty('color', 'rgb('+r+','+g+','+b+')');
-	  }
+        var blockquotes = document.getElementsByTagName('blockquote');
+        for(var i=0; i<blockquotes.length; i++) {
+            var r = Math.floor(Math.random()*255);
+            var g = Math.floor(Math.random()*255);
+            var b = Math.floor(Math.random()*255);
+            var e = blockquotes[i];
+            e.style.setProperty('color', 'rgb('+r+','+g+','+b+')');
+        }
 
-	  window.setTimeout(party.partypartyparty, 200);
+        window.setTimeout(party.partypartyparty, 200);
     };
 
 If you add it to the page then the result is, well, startling:
