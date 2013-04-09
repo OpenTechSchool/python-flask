@@ -131,7 +131,7 @@ Outside of Python, dictionaries are often called ``hash tables``, ``hash maps`` 
 
 At the moment we don't have any way to store email addresses. But if we add a list to our website then we can keep them temporarily. Sure it will only stay around until the web server stops, but it is a good start.
 
-Let's add a list to the top of the Python code, just after all the `import` lines and `app = Flask(__name__)`:
+Let's add an empty list to the top of the Python code, just after all the `import` lines and `app = Flask(__name__)`:
 
     email_addresses = []
 
@@ -141,26 +141,26 @@ Now in our `signup()` function we can add the email address instead of printing 
     def signup():
         email = request.form['email']
         email_addresses.append(email)
-        print(email_addresses)
+        print(email_addresses) 
         return redirect('/')
 
-Check the output you get when submitting a form. It prints out the entire list every time.
+Check the output you get in the console, when submitting a form. It prints out the entire list every time.
 
 ## Listing email addresses
 
-Printing out our email addresses to the console is a bit of a hassle. If you wanted to read the list then you have to open the terminal and scan through for the printout. It would be so much easier to have a web page that lists all the email addresses that we have collected.
+Just printing out our email addresses is a bit of a hassle. If you wanted to read the list then you have to open the terminal and scan through for the printout. It would be so much easier to have a web page that lists all the email addresses that we have collected.
 
-We know how to create a new page in Flask, it's just a function. And we can pass the list of emails directly to our HTML template like so:
+We know how to create a new page in Flask, it's just a function. And we can pass the list of emails directly to a HTML template like so:
 
     @app.route('/emails.html')
     def emails():
-        return render_template('emails.html', email_addresses = email_addresses)
+        return render_template('emails.html', email_addresses=email_addresses)
 
-Here the `render_template()` function takes the name of the template (`'emails.html'`) and extra data to be used when rendering the page. We wrote `email_addresses = email_addresses` to say that our variable `email_addresses` will be available in the template using the same name.
+Here the `render_template()` function takes the name of the template (`'emails.html'`) and extra data to be used when rendering the page. We wrote `email_addresses=email_addresses` to say that our variable `email_addresses` will be available in the template using the same name.
 
 Now we need our HTML template. In our previous template we didn't actually do anything but plain HTML. But now we need to print the list of email addresses, so we'll use a `for` loop in the template.
 
-Here is the content of `emails.html` for the _templates_ directory:
+Here is an example of the content of `emails.html` for the _templates_ directory:
 
 {% raw %}
 
@@ -182,7 +182,9 @@ Here is the content of `emails.html` for the _templates_ directory:
 
 {% endraw %}
 
-Check out the _for_ loop that we use in the template. It is similar to the one used in Python but subtly different. You can see it doesn't contain the `:` at the end of the first line, and it needs an `endfor` statement to end the loop.
+Check out the _for_ loop that we use in the template. It is similar to the one used in Python but subtly different. You can see it doesn't contain the `:` at the end of the first line, and it needs an `endfor` statement to end the loop. This comes from the template making use of flask's Jinja2 templating language, that's designed to be very simple to read and write.
+
+Now you can **reboot your server, submit some emails, and visit [/emails.html](http://127.0.0.1:5000/emails.html)** to check everything is working as expected! What happens if you restart the server again?
 
 ## Success!
 
