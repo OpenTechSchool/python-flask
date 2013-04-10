@@ -43,9 +43,20 @@ It's easiest to start at the end. Think of a fun and interesting topic to add to
 
 ## Editing Text
 
-We use long-lines (no newlines in paragraphs) to keep diffs moderately sane.
+* We use long-lines (no newlines in paragraphs) to keep diffs moderately sane.
+* Code is indented with 4 spaces.
+* HTML/CSS is indented with 2 spaces.
 
-I use Emacs 24, with markdown-mode (Ubuntu emacs-goodies-el) and gfm-mode (GitHub markdown minor-mode). Set `longlines-show-hard-newlines` if you want to see where all the newlines are.
+I use Emacs 24, with markdown-mode (Ubuntu emacs-goodies-el) and gfm-mode (GitHub markdown minor-mode). Set `longlines-show-hard-newlines` if you want to see where all the newlines are. These settings are useful:
+
+    (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+    (setq-default indent-tabs-mode nil)
+
+In Vim, you might like these settings:
+
+    set tabstop=4
+    set shiftwidth=4
+    set expandtab
 
 # Markup Guide
 
