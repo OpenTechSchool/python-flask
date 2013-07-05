@@ -11,7 +11,7 @@ This is the course content for Websites with Python Flask, which has been develo
 
 Hi, welcome to Websites with Python Flask. In this workshop we will take you through the fundamentals of creating dynamic websites using the Python Flask library. After the workshop you should have a rough mental picture of how websites work and some good pointers for getting further with websites of your own.
 
-We only expect you to know a little Python, like from our [Introduction to Programming](http://opentechschool.github.com/python-beginners/en/index.html) workshop. You definitely do not need to know a lot. It will be best if you have a recent version of Python installed as well (version 2.7 or 3+).
+We only expect you to know a little Python, like from our [Introduction to Programming](http://opentechschool.github.com/python-beginners/en/index.html) workshop. You definitely do not need to know a lot. It will be best if you have a recent version of Python installed as well (version 2.7 or 3.3+).
 
 Don't worry if you know only a little HTML or none at all. We'll be looking at how it all works rather than how to make it look pretty. HTML is important, but it's only one part of making a website.
 
