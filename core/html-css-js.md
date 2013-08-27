@@ -62,21 +62,20 @@ If you want a deeper understanding of what all of the CSS properties like ``padd
 
 JavaScript is an entire programming language contained entirely within the browser. Though HTML with CSS might look pretty, it can't actually do anything once the page has been rendered.
 
-
 This snippet of JavaScript will run in your browser and scan the current page for `blockquote` tags and give them a random color every 200 milliseconds (five times per second).
 
-    function partypartyparty(event) {
-        var blockquotes = document.getElementsByTagName('blockquote');
-        for(var i=0; i<blockquotes.length; i++) {
+    function partypartyparty() {
+        var quotes = document.getElementsByClassName('fancyquote');
+        for(var i=0; i<quotes.length; i++) {
             var r = Math.floor(Math.random()*255);
             var g = Math.floor(Math.random()*255);
             var b = Math.floor(Math.random()*255);
-            var e = blockquotes[i];
-            e.style.setProperty('color', 'rgb('+r+','+g+','+b+')');
+            var q = quotes[i];
+            q.style.setProperty('color', 'rgb('+ r +','+ g +',' + b + ')');
         }
+    }
 
-        window.setTimeout(party.partypartyparty, 200);
-    };
+    window.setInterval(partypartyparty, 500);
 
 If you add it to the page then the result is, well, startling:
 
