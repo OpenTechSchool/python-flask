@@ -75,7 +75,7 @@ This snippet of JavaScript will run in your browser and scan the current page fo
             e.style.setProperty('color', 'rgb('+r+','+g+','+b+')');
         }
 
-        window.setTimeout(party.partypartyparty, 200);
+        window.setTimeout(partypartyparty, 200);
     };
 
 If you add it to the page then the result is, well, startling:
