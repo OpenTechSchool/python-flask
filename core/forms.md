@@ -65,7 +65,7 @@ There are a couple of gotchas with select boxes:
 * There is no built-in way to say "Select an option..." when the user has not selected an option yet. Although this is a very common scenario, and the browser automatically selects the first option which may be confusing. In HTML you have to specifically create a `<option>` tag containing "Select an option...".
 * To automatically select an option when the page loads you can use the `selected` attribute on the option, like this:
 
-    <option selected="selected" value="secret">Secret Sauce</option>
+        <option selected="selected" value="secret">Secret Sauce</option>
 
 * There is an attribute called `multiple` which allows multiple selections in the `<select>` tag. The only reason I mention this is to recommend **never** using it.
 

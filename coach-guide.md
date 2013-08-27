@@ -9,7 +9,7 @@ Thanks for coaching! Check out the generic [OpenTechSchool coaching guide](http:
 
 ## Python
 
-We are recommending Python 2.7 for this workshop, though they can use Python 3 if they use the custom version of Flask in the setup section.
+We are recommending Python 3.3 for this workshop, though they can use Python 2.7 if they wish. Python 3 versions older than 3.3 are not supported by Flask.
 
 With Python installed, we then recommend using [distribute](http://pythonhosted.org/distribute/)'s `easy_install` to install [pip](https://pypi.python.org/pypi/pip), then using pip to install [virtualenv](https://pypi.python.org/pypi/virtualenv).
 
