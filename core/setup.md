@@ -12,8 +12,8 @@ For this workshop it is recommended to use Python 3.3, which the latest version 
 You can see what version of Python is installed by starting the Python interpreter. For example on Linux and OSX you can run the `python` command:
 
     $ python
-    Python 2.7.3 (default, Sep 26 2012, 21:53:58) 
-    [GCC 4.7.2] on linux2
+    Python 2.7.6 (default, Nov 26 2013, 12:52:49) 
+    [GCC 4.8.2] on linux2
     Type "help", "copyright", "credits" or "license" for more information.
     >>> 
 
@@ -35,46 +35,36 @@ The `pip` command uses the [Python Packages Index](https://pypi.python.org/pypi)
 
 ## Windows
 
-To install pip on Windows, download and run [distribute_setup.py](http://python-distribute.org/distribute_setup.py). This will install the `easy_install` command into the `Scripts` folder under your Python installation. For example, into `C:\Python33\Scripts\easy_install` if you used the default install.
+To install pip on Windows, download and open [get-pip.py](https://raw.github.com/pypa/pip/master/contrib/get-pip.py). This will install both [pip] and [setuptools] \(pip uses setuptools to install packages\).
 
-With `easy_install` you can use that to install `pip` using the command prompt:
+You should have **pip** installed in Python's `Scripts` folder. In a command prompt (**cmd.exe**, used for running install command or python manually) you might not have python and its scripts in Windows' PATH; this essentially means when you type something like `pip install flask`, Windows won't be able find `pip`. To fix this, you can go to `C:\Python33\Tools\Scripts\` and run the `win_add2path.py` file.
 
-    C:\> C:\Python33\Scripts\easy_install pip
+[pip]: https://pypi.python.org/pypi/pip
+[setuptools]: https://pypi.python.org/pypi/setuptools
 
-Now you will have `pip` installed in the Scripts folder as well. If you like, you can ask us about adding the Python and scripts directories to the windows PATH; this will let you type `python` or `pip` at your command prompt directly.
-
-## Mac OSX
+## Mac OS X & Linux
 
 The `pip` command might already be installed, try running `pip` in the command prompt. If that didn't work then try:
 
     $ curl -O https://raw.github.com/pypa/pip/master/contrib/get-pip.py
     $ sudo python get-pip.py
 
-On Mac OSX you might need to use an older version of `pip` to workaround errors in the Mac OSX installation of OpenSSL. Details [here](https://github.com/pypa/pip/issues/829).
+On Mac OSX you might need to use an older version of `pip` to workaround errors in the Mac OSX installation of OpenSSL. Details [here](https://github.com/pypa/pip/issues/829). If you have any troubles please
+ask!
 
-## Linux
+# Virtualenv
 
-Many Linux distributions include a package for pip. For example on Ubuntu you can install it with:
+This part isn't required for Flask, but its very useful if you think you'll ever work on more than one python project! You can skip over this section if you like, or come back to it later.
 
-    $ sudo apt-get install python-pip
-
-# virtualenv
-
-This part isn't required for Flask, but many people find it very useful to be able to separate their projects in terms of package installations and Python versions. You can skip over this section if you like, or come back to it later.
-
-Virtualenv makes it easy to use different packages, and even different versions of packages, and even different *pythons*, in any of your python projects. So you could have one project using Flask, another using Django, another using Bottle and they won't step all over each other.
+Virtualenv makes it easy to use different packages, and even different versions of packages, and even different *pythons*, in your python projects. So you could have one project using Flask, another using Django, another using Bottle and they won't step all over each other, and you won't be confused for which project you installed which package.
 
 Installing on Windows is as easy as:
 
-    C:\> C:\Python33\Scripts\pip install virtualenv
+    C:\> pip install virtualenv
 
-On OSX, try
+On OS X and Linux, try
 
     $ sudo pip install virtualenv
-
-To install on Linux you can often find virtualenv already packaged for you. For example on Ubuntu you can do:
-
-    $ sudo apt-get install python-virtualenv
 
 Now that it is installed, we can set up virtualenv for this workshop. This will keep Flask and it's dependencies contained to just this workshop:
 
@@ -84,9 +74,9 @@ On OSX and Linux:
     $ mkdir flask-workshop
     $ cd flask-workshop
     # Create a Python 3 virtualenv under the 'venv' directory
-    $ virtualenv --python=python3 venv
+    $ virtualenv --python=python3 flaskenv
     # Activate the virtual environment
-    $ source venv/bin/activate
+    $ source flaskenv/bin/activate
 
 On Windows:
 
@@ -94,9 +84,9 @@ On Windows:
     C:\> mkdir flask-workshop
     C:\> cd flask-workshop
     # Create a Python 3 virtualenv under the 'venv' directory
-    C:\> C:\Python33\Scripts\virtualenv venv
+    C:\> virtualenv flaskenv
     # Activate the virtual environment
-    C:\> venv\Scripts\activate
+    C:\> flaskenv\Scripts\activate
 
 The last step, *activate* sets your terminal/command prompt session for using a contained Python3 installation in the `flask-workshop` directory. If you start up a new terminal then you will need to repeat the activation step again.
 
