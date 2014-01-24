@@ -17,11 +17,11 @@ You can see what version of Python is installed by starting the Python interpret
     Type "help", "copyright", "credits" or "license" for more information.
     >>> 
 
-Here you can see it is version `2.7.3`. If you don't have Python installed or you have Python 2 then continue reading. It is very possible to use Flask with Python 2, but we recommend moving to the latest version of the language.
+Here you can see it is version `2.7.6`. If you don't have Python installed or you have Python 2 then continue reading. It is very possible to use Flask with Python 2, but we recommend moving to the latest version of the language.
 
 # Python 3.3+
 
-If you don't have this installed then you can download it [**here**](http://python.org/download/). The latest version at the time of writing is 3.3.2.
+If you don't have this installed then you can download it [**here**](http://python.org/download/). The latest version at the time of writing is 3.3.3.
 
 * Windows: Choose one of the Installer packages - 'x86' if you have 32-bit Windows, or 'x86-64' if you have 64-bit Windows. Just ask if you're not sure which.
 * Mac: You most likely want the 64-bit/32-bit Installer.
@@ -31,7 +31,7 @@ If you don't have this installed then you can download it [**here**](http://pyth
 
 Python comes with a lot of built-in functionality in the form of modules. For example, we used the `turtle` module in the Introduction to Programming course. However, Python doesn't come with everything you might need. You can extend Python by adding new modules, which come bundled up in *packages*.
 
-The `pip` command uses the [Python Packages Index](https://pypi.python.org/pypi) to install new Python packages. This makes it super-easy to install Flask and other packages that you might want to use in future, for example [Twitter](https://pypi.python.org/pypi/twitter/1.9.1) (to access the Twitter API to request data about Twitter) or [bashplotlib](https://pypi.python.org/pypi/bashplotlib/0.4.4) (to plot data on a graph in your terminal.)
+The `pip` command uses the [Python Packages Index](https://pypi.python.org/pypi) to install new Python packages. This makes it super-easy to install Flask and other packages that you might want to use in future, for example [Twitter](https://pypi.python.org/pypi/twitter) (to access the Twitter API to request data about Twitter) or [bashplotlib](https://pypi.python.org/pypi/bashplotlib) (to plot data on a graph in your terminal.)
 
 ### Windows
 
