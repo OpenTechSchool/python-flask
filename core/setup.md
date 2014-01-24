@@ -33,7 +33,7 @@ Python comes with a lot of built-in functionality in the form of modules. For ex
 
 The `pip` command uses the [Python Packages Index](https://pypi.python.org/pypi) to install new Python packages. This makes it super-easy to install Flask and other packages that you might want to use in future, for example [Twitter](https://pypi.python.org/pypi/twitter/1.9.1) (to access the Twitter API to request data about Twitter) or [bashplotlib](https://pypi.python.org/pypi/bashplotlib/0.4.4) (to plot data on a graph in your terminal.)
 
-## Windows
+### Windows
 
 To install pip on Windows, download and open [get-pip.py](https://raw.github.com/pypa/pip/master/contrib/get-pip.py). This will install both [pip] and [setuptools] \(pip uses setuptools to install packages\).
 
@@ -42,7 +42,7 @@ You should have **pip** installed in Python's `Scripts` folder. In a command pro
 [pip]: https://pypi.python.org/pypi/pip
 [setuptools]: https://pypi.python.org/pypi/setuptools
 
-## Mac OS X & Linux
+### Mac OS X & Linux
 
 The `pip` command might already be installed, try running `pip` in the command prompt. If that didn't work then try:
 
@@ -56,7 +56,7 @@ ask!
 
 This part isn't required for Flask, but its very useful if you think you'll ever work on more than one python project! You can skip over this section if you like, or come back to it later.
 
-Virtualenv makes it easy to use different packages, and even different versions of packages, and even different *pythons*, in your python projects. So you could have one project using Flask, another using Django, another using Bottle and they won't step all over each other, and you won't be confused for which project you installed which package.
+**virtualenv** makes it easy to use different packages, and even different versions of packages, and even different *pythons*, in your python projects. So you could have one project using Flask, another using Django, another using Bottle and they won't step all over each other, and you won't be confused for which project you installed which package.
 
 Installing on Windows is as easy as:
 
@@ -66,14 +66,14 @@ On OS X and Linux, try
 
     $ sudo pip install virtualenv
 
-Now that it is installed, we can set up virtualenv for this workshop. This will keep Flask and it's dependencies contained to just this workshop:
+Now that it is installed, we can set up a "virtual environment" for this workshop. This will keep Flask and it's dependencies contained to just this workshop:
 
 On OSX and Linux:
 
     # Create the directory for this workshop
     $ mkdir flask-workshop
     $ cd flask-workshop
-    # Create a Python 3 virtualenv under the 'venv' directory
+    # Create a Python 3 virtualenv under the 'flaskenv' directory
     $ virtualenv --python=python3 flaskenv
     # Activate the virtual environment
     $ source flaskenv/bin/activate
@@ -83,12 +83,12 @@ On Windows:
     # Create the directory for this workshop
     C:\> mkdir flask-workshop
     C:\> cd flask-workshop
-    # Create a Python 3 virtualenv under the 'venv' directory
+    # Create a Python 3 virtualenv under the 'flaskenv' directory
     C:\> virtualenv flaskenv
     # Activate the virtual environment
     C:\> flaskenv\Scripts\activate
 
-The last step, *activate* sets your terminal/command prompt session for using a contained Python3 installation in the `flask-workshop` directory. If you start up a new terminal then you will need to repeat the activation step again.
+The last step, *activate* sets up your terminal/command prompt session for using a contained Python3 installation in the `flask-workshop` directory. If you start up a new terminal then you will need to repeat the activation step again.
 
 The `deactivate` command can be used to return your terminal back to normal. But for now let's leave it activated because it's time to install Flask.
 
