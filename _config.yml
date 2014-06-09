@@ -26,7 +26,7 @@ map:
     - title: Form Submission
       path: /core/form-submission.html
       caption: Receiving and processing the form.
-    - title: Data Structure
+    - title: Data Structures
       path: /core/data.html
       caption: The basics of storing data in Python.
  - title: Extras

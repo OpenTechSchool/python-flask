@@ -75,6 +75,7 @@ Of course the core workshop can't cover everything. But we've prepared these ext
 
 * [Python Lists API](http://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range) and  [Python Dictionaries API](http://docs.python.org/3/library/stdtypes.html#mapping-types-dict)
 * [Flask Documentation](http://flask.pocoo.org/docs/) - Quickstart, User Guide and Reference.
+* [Explore Flask](http://exploreflask.com/) - A free book for exploring Flask in-depth.
 * [Jinja Documentation](http://jinja.pocoo.org/docs/templates/) - For the HTML templates used in Flask.
 * [Popular Web Frameworks](reference/web-frameworks.html) - Some of the more popular website platforms at the moment.
 
