@@ -28,7 +28,7 @@ map:
       caption: Receiving and processing the form.
     - title: Data Structures
       path: /core/data.html
-      caption: The basics of storing data in Python.
+      caption: The basics of organising data in Python.
  - title: Extras
    caption: Additional workshop content
    subpages:
