@@ -7,7 +7,7 @@ title: Setup
 
 # Which Python?
 
-For this workshop it is recommended to use Python 3.3, which the latest version of Flask is compatible with!
+For this workshop it is recommended to use Python 3.4, which the latest version of Flask is compatible with!
 
 You can see what version of Python is installed by starting the Python interpreter. For example on Linux and OSX you can run the `python` command:
 
@@ -21,7 +21,7 @@ Here you can see it is version `2.7.6`. If you don't have Python installed or yo
 
 # Python 3.3+
 
-If you don't have this installed then you can download it [**here**](http://python.org/download/). The latest version at the time of writing is 3.3.3.
+If you don't have this installed then you can download it [**here**](http://python.org/download/). The latest version at the time of writing is 3.4.1.
 
 * Windows: Choose one of the Installer packages - 'x86' if you have 32-bit Windows, or 'x86-64' if you have 64-bit Windows. Just ask if you're not sure which.
 * Mac: You most likely want the 64-bit/32-bit Installer.
@@ -46,7 +46,7 @@ You should have **pip** installed in Python's `Scripts` folder. In a command pro
 
 The `pip` command might already be installed, try running `pip` in the command prompt. If that didn't work then try:
 
-    $ curl -O https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+    $ curl -O https://bootstrap.pypa.io/get-pip.py
     $ sudo python get-pip.py
 
 On Mac OSX you might need to use an older version of `pip` to workaround errors in the Mac OSX installation of OpenSSL. Details [here](https://github.com/pypa/pip/issues/829). If you have any troubles please
@@ -64,9 +64,9 @@ Installing on Windows is as easy as:
 
 On OS X and Linux, try
 
-    $ sudo pip install virtualenv
+    $ pip install --user virtualenv
 
-Now that it is installed, we can set up a "virtual environment" for this workshop. This will keep Flask and it's dependencies contained to just this workshop:
+Now that it is installed, we can set up a "virtual environment" for this workshop. This will keep Flask and it's dependencies contained to just this workshop.
 
 On OSX and Linux:
 
@@ -98,4 +98,4 @@ So far as website frameworks go, Flask has a minimal number of libraries that it
 
 Now that everything is set up, installing Flask is as easy as:
 
-    pip install flask
+    $ pip install flask
