@@ -29,25 +29,27 @@ If you don't have this installed then you can download it [**here**](http://pyth
 
 # pip
 
-Python comes with a lot of built-in functionality in the form of modules. For example, we used the `turtle` module in the Introduction to Programming course. However, Python doesn't come with everything you might need. You can extend Python by adding new modules, which come bundled up in *packages*.
+Python comes with a lot of built-in functionality in the form of "packages". For example, we used the `turtle` module in the Introduction to Programming course. However, Python doesn't come with everything you might need. You can extend Python by adding new modules, which come bundled up in *packages*.
 
-The `pip` command uses the [Python Packages Index](https://pypi.python.org/pypi) to install new Python packages. This makes it super-easy to install Flask and other packages that you might want to use in future, for example [Twitter](https://pypi.python.org/pypi/twitter) (to access the Twitter API to request data about Twitter) or [bashplotlib](https://pypi.python.org/pypi/bashplotlib) (to plot data on a graph in your terminal.)
+The `pip` command uses the [Python Packages Index](https://pypi.python.org/pypi) to install new Python packages made by others. This makes it super-easy to install Flask and other packages that you might want to use in future, for example [Twitter](https://pypi.python.org/pypi/twitter) (to access the Twitter API to request data about Twitter) or [bashplotlib](https://pypi.python.org/pypi/bashplotlib) (to plot data on a graph in your terminal.)
 
 ### Windows
 
 To install pip on Windows, download and open [get-pip.py](https://raw.github.com/pypa/pip/master/contrib/get-pip.py). This will install both [pip] and [setuptools] \(pip uses setuptools to install packages\).
 
-You should have **pip** installed in Python's `Scripts` folder. In a command prompt (**cmd.exe**, used for running install command or python manually) you might not have python and its scripts in Windows' PATH; this essentially means when you type something like `pip install flask`, Windows won't be able find `pip`. To fix this, you can go to `C:\Python33\Tools\Scripts\` and run the `win_add2path.py` file.
+Pip is a command line program, so we'll need to open up a Command Prompt to use it. You can type `cmd` in your Start Menu / Start Screen and Windows should find it for you to start.
+
+Afterwards there should be **pip** installed in Python's `Scripts` folder. In the command prompt you might not have python and its scripts in Windows' PATH; this essentially means when you type something like `pip install flask`, Windows won't be able find `pip`. To fix this, you can go to `C:\Python33\Tools\Scripts\` and run the `win_add2path.py` file.
 
 [pip]: https://pypi.python.org/pypi/pip
 [setuptools]: https://pypi.python.org/pypi/setuptools
 
 ### Mac OS X & Linux
 
-The `pip` command might already be installed, try running `pip` in the command prompt. If that didn't work then try:
+The `pip` command might already be installed, try running `pip` in the terminal. If that didn't work then try:
 
     $ curl -O https://bootstrap.pypa.io/get-pip.py
-    $ sudo python get-pip.py
+    $ python get-pip.py --user
 
 On Mac OSX you might need to use an older version of `pip` to workaround errors in the Mac OSX installation of OpenSSL. Details [here](https://github.com/pypa/pip/issues/829). If you have any troubles please
 ask!
@@ -56,7 +58,7 @@ ask!
 
 This part isn't required for Flask, but its very useful if you think you'll ever work on more than one python project! You can skip over this section if you like, or come back to it later.
 
-**virtualenv** makes it easy to use different packages, and even different versions of packages, and even different *pythons*, in your python projects. So you could have one project using Flask, another using Django, another using Bottle and they won't step all over each other, and you won't be confused for which project you installed which package.
+**virtualenv** makes it easy to use different packages, and even different versions of packages, in your python projects. So you could have one project using Flask, another using Django, another using Bottle and they won't step all over each other, and you won't be confused for which project you installed which package.
 
 Installing on Windows is as easy as:
 
@@ -99,3 +101,5 @@ So far as website frameworks go, Flask has a minimal number of libraries that it
 Now that everything is set up, installing Flask is as easy as:
 
     $ pip install flask
+
+Phew! That should be all the housekeeping, now we can get on with the fun stuff.
