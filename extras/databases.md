@@ -44,7 +44,7 @@ Likewise we use `@app.teardown_request` to close the database connection after e
     @app.teardown_request
     def teardown_request(exception):
         if hasattr(g, 'db'):
-        g.db.close()
+            g.db.close()
 
 ## Adding a new email address
 
