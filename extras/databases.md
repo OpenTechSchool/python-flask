@@ -50,7 +50,7 @@ Likewise we use `@app.teardown_request` to close the database connection after e
 
 Now that we have everything installed and set up we can just use an SQL _INSERT_ statement to add new email addresses to the table.
 
-    @app.route('/signup.html', methods = ['POST'])
+    @app.route('/signup', methods = ['POST'])
     def signup():
         email = request.form['email']
         g.db.execute("INSERT INTO email_addresses VALUES (?)", [email])
