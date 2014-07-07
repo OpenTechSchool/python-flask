@@ -33,7 +33,7 @@ How can we use this? Let's say we would like users to be able to delete their ow
 
 First, we have to **modify the `signup()` route** to remember the user's email address in the session:
 
-    @app.route('/signup.html', methods = ['POST'])
+    @app.route('/signup', methods = ['POST'])
     def signup():
         email = request.form['email']
         email_addresses.append(email)
