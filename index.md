@@ -78,4 +78,5 @@ Of course the core workshop can't cover everything. But we've prepared these ext
 * [Explore Flask](http://exploreflask.com/) - A free book for exploring Flask in-depth.
 * [Jinja Documentation](http://jinja.pocoo.org/docs/templates/) - For the HTML templates used in Flask.
 * [Popular Web Frameworks](reference/web-frameworks.html) - Some of the more popular website platforms at the moment.
+* [The flask mega tutorial](http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) - A great tutorial which also turned into a book. If you like flask look here. 
 
