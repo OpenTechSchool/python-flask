@@ -32,6 +32,7 @@ Open a new file called `catseverywhere.py` in your workshop directory. This migh
         return 'Hello World!'
 
     if __name__ == '__main__':
+        app.debug = True        
         app.run()
 
 Let's type it into our new file, and break it down a little:
@@ -50,9 +51,10 @@ The `@` is new, it's called a [_decorator_](http://en.wikipedia.org/wiki/Python_
 The function itself returns the string "Hello World!". This will be sent to the web browser.
 
     if __name__ == '__main__':
+        app.debug = True
         app.run()
 
-This is Python for  "if this script is run directly then start the application".
+This is Python for  "if this script is run directly then enable debug mode and start the application".
 
 Now you can start running your first website! In your terminal:
 
