@@ -25,7 +25,7 @@ None of that explains where to put the *content* of our application - the HTML. 
 
 Flask uses another special directory to store templates, called `templates` (crazy, huh?), **so go ahead and create it**, like you did for `static`.
 
-In it, **create a file** called `index.html` and chuck some in some HTML -
+In it, **create a file** called `index.html` inside of `templates` directory and chuck some in some HTML -
 
 {% raw %}
 
