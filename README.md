@@ -99,7 +99,7 @@ Getting literal with `backticks`
 
 This is a horizonal rule:
 
-******
+*********************
 
 If you want to highlight some ruby code:
 
@@ -114,3 +114,4 @@ Bit of command line:
     $ 
 
 For a more complete list of languages see [highlight.js](http://softwaremaniacs.org/media/soft/highlight/test.html)
+Thanks!
