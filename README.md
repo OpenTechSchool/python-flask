@@ -41,7 +41,7 @@ Course work goes under `core/` or `extras/`. It's all linked together by `index.
 
 It's easiest to start at the end. Think of a fun and interesting topic to add to the extras. Then you can copy this file to get an idea for formatting.
 
-## Editing Text
+## TEXT EDITOR
 
 * We use long-lines (no newlines in paragraphs) to keep diffs moderately sane.
 * Code is indented with 4 spaces.
